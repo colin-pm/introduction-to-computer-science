@@ -8,7 +8,6 @@ license = "CC BY-NC-SA 4.0"
 [tool.poetry.dependencies]
 python = "^3.6"
 Sphinx = "^3.5.4"
-sphinx-markdown-tables = "^0.0.15"
 sphinx-bootstrap-theme = "^0.7.1"
 myst-parser = "^0.14.0"
 

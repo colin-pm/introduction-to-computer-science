@@ -31,9 +31,7 @@ release = '0.1.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx.ext.autodoc',
-    'myst_parser',
-    'sphinx_markdown_tables'
+    'myst_parser'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -63,7 +61,6 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_theme_options = {
     'navbar_title': "TEALS Program",
     'navbar_links': [
-        # Home | Curriculum Map | Change Log
         ("Home", "README"),
         ("Curriculum Map", "curriculum_map"),
         ("Change Log", "changelog")
