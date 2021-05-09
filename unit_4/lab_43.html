@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 4.3 - Guess Who &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lab 4.3 - Guess Who</a><ul>
+<li><a class="reference internal" href="#part-1-role-call">Part 1: Role Call</a></li>
+<li><a class="reference internal" href="#part-2-i-m-looking-for">Part 2: I’m Looking For</a></li>
+<li><a class="reference internal" href="#grading-scheme-rubric">Grading Scheme/Rubric</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_4/lab_43.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lab-4-3-guess-who">
+<h1>Lab 4.3 - Guess Who<a class="headerlink" href="#lab-4-3-guess-who" title="Permalink to this headline">¶</a></h1>
+<p>In this lab, you will create a list of names and then look through the list pulling out a subset of names.</p>
+<div class="section" id="part-1-role-call">
+<h2>Part 1: Role Call<a class="headerlink" href="#part-1-role-call" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Create a list of six different names (e.g. the names of your favorite music artists, family members, authors, celebrities, etc.).</p></li>
+<li><p>Write a Snap! script to welcome each person individually to the program one at a time.  (For example, “Welcome, John.”)</p></li>
+<li><p>Write a new Snap! script that welcomes all the players at once.  For example, your new script should say “Welcome John, Kayla, and Michael.”  First, by writing a script that can say all the names on one line. Then add the commas and the word “and”.  Make sure your script works correctly no matter how many names are in the list.</p></li>
+</ol>
+</div>
+<div class="section" id="part-2-i-m-looking-for">
+<h2>Part 2: I’m Looking For<a class="headerlink" href="#part-2-i-m-looking-for" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Write a script that says every other name in a list one at a time when the space bar is pressed.  Use the same list of names from above.  For example, if the list is [Eric, Sally, Michelle, John, Sam, Caleb], the names Eric, Michelle, and Sam would be said.</p></li>
+<li><p>Write a script that says the names in the list one at a time in reverse order when the ‘0’ key is pressed.  For example, if the list is [Eric, Sally, Michelle, John, Sam, Caleb], the names Caleb, Sam, John, Michelle, Sally, and Eric would be said.</p></li>
+<li><p>Write scripts so that when each of the following keys is pressed, the corresponding subset of names from the list is said one at a time.</p></li>
+</ol>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>When this key is pressed…</p></th>
+<th class="head"><p>Say the names in the list that…</p></th>
+<th class="head"><p>For example…</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Have more than four letters</p></td>
+<td><p>Sally, Michelle</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Start with the letter ‘c’</p></td>
+<td><p>Caleb</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>End with the letter ‘y’</p></td>
+<td><p>Sally</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Are not the first two or last two names in the list</p></td>
+<td><p>Michelle, John</p></td>
+</tr>
+<tr class="row-even"><td><p>5 (optional)</p></td>
+<td><p>Contain the letter ‘e’</p></td>
+<td><p>Eric, Michelle, Caleb</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="grading-scheme-rubric">
+<h2>Grading Scheme/Rubric<a class="headerlink" href="#grading-scheme-rubric" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Lab 4.3 Criteria</strong></p></th>
+<th class="head"><p><strong>Points</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.2 Welcome by name</p></td>
+<td><p>0.25</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.3 Welcome all at once</p></td>
+<td><p>0.25</p></td>
+</tr>
+<tr class="row-even"><td><p>2.1 Every other name</p></td>
+<td><p>0.25</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.2 Reverse order</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>2.3.1 &gt; 4 letters</p></td>
+<td><p>0.25</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.3.2 start with C</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>2.3.3 End with y</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.3.4 Not first 2 or last 2</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>2.3.5 Bonus: Contain e or E</p></td>
+<td><p>0.25</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>PROJECT TOTAL</strong></p></td>
+<td><p><strong>3.25 points</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

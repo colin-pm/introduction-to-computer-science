@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 3.3 - Let Me Check My Calendar &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lab 3.3 - Let Me Check My Calendar</a><ul>
+<li><a class="reference internal" href="#part-1-basics">Part 1: Basics</a></li>
+<li><a class="reference internal" href="#part-2-going-farther">Part 2: Going Farther</a></li>
+<li><a class="reference internal" href="#grading-scheme-rubric">Grading Scheme/Rubric</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_3/lab_33.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lab-3-3-let-me-check-my-calendar">
+<h1>Lab 3.3 - Let Me Check My Calendar<a class="headerlink" href="#lab-3-3-let-me-check-my-calendar" title="Permalink to this headline">¶</a></h1>
+<p>In this lab, you will write custom blocks that take arguments and are useful for calculations involving dates and calendars.</p>
+<div class="section" id="part-1-basics">
+<h2>Part 1: Basics<a class="headerlink" href="#part-1-basics" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Write a custom Snap! block called <code class="docutils literal notranslate"><span class="pre">month</span> <span class="pre">name</span></code> that takes a number between 1 and 12 as an argument and says the name of the corresponding month.</p></li>
+<li><p>Write a custom Snap! block called <code class="docutils literal notranslate"><span class="pre">day</span> <span class="pre">name</span></code> that takes a number between 1 and 7 as an argument and says the name of the corresponding day.  For our purposes, the week begins on Sunday.</p></li>
+<li><p>Write a custom Snap! block called <code class="docutils literal notranslate"><span class="pre">days</span> <span class="pre">in</span></code> that takes a month name as an argument and says how many days are in that month.  Assume a non-leap year.</p></li>
+</ol>
+</div>
+<div class="section" id="part-2-going-farther">
+<h2>Part 2: Going Farther<a class="headerlink" href="#part-2-going-farther" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Write a custom Snap! block called <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">a</span> <span class="pre">leap</span> <span class="pre">year</span></code> that takes a year number as an argument and says whether or not that year is a leap year.</p>
+<ul class="simple">
+<li><p>A year is a leap year if the year is a multiple of 4 that is not a multiple of 100 (e.g. 1984), or if it is a multiple of 400 (e.g. 2000). Years that are multiples of 100 but not multiples of 400 are NOT leap years (e.g. 1800).  See <a class="reference external" href="https://en.wikipedia.org/wiki/Leap_year#Algorithm">Wikipedia</a> for more detail.</p></li>
+</ul>
+</li>
+<li><p>Write a custom Snap! block called <code class="docutils literal notranslate"><span class="pre">is</span> <span class="pre">a</span> <span class="pre">valid</span> <span class="pre">date</span></code> that takes a month name and a date as arguments and says whether or not that date exists in that month.  For example, the 31st is a valid date in January, but not in June.  The 5th is a valid date in every month, and the 40th is not a valid date in any month.</p></li>
+<li><p>Write a custom Snap! block called <code class="docutils literal notranslate"><span class="pre">day</span> <span class="pre">in</span> <span class="pre">year</span></code> that takes a year number and a number between 1 and 366 and says the date that corresponds to that numbered day of the specified year.  For example, in non-leap years day #1 is January 1, day #32 is February 1, day #365 is December 31, and day #185 is July 4.  Give an error message if the number is 366 and a non-leap year is specified.</p></li>
+<li><p>BONUS: Determine the day you were born.  Write a custom Snap! block called <code class="docutils literal notranslate"><span class="pre">day</span> <span class="pre">of</span> <span class="pre">week</span></code> that takes a month name, date, and year as arguments and says the day of week on which that date falls in that year.  See  <a class="reference external" href="http://en.wikipedia.org/wiki/Determination_of_the_day_of_the_week">http://en.wikipedia.org/wiki/Determination_of_the_day_of_the_week</a> for information on finding the day of the week from a date.</p></li>
+</ol>
+</div>
+<div class="section" id="grading-scheme-rubric">
+<h2>Grading Scheme/Rubric<a class="headerlink" href="#grading-scheme-rubric" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Lab 3.3 Criteria</strong></p></th>
+<th class="head"><p>Points</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.1 month name</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.2 day name</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>1.3 days in</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.1 is leap year</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>2.2 is a valid date</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.3 day in year</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>2.4 Bonus: day in week</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>PROJECT TOTAL</strong></p></td>
+<td><p><strong>3.0 points</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

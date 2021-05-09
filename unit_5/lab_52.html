@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 5.2 - Lots of Balls &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lab 5.2 - Lots of Balls</a><ul>
+<li><a class="reference internal" href="#part-1-follow-the-bouncing-sprites">Part 1 - Follow the bouncing sprites</a></li>
+<li><a class="reference internal" href="#part-2-clones">Part 2 - Clones</a></li>
+<li><a class="reference internal" href="#grading-scheme-rubric">Grading Scheme/Rubric</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_5/lab_52.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lab-5-2-lots-of-balls">
+<h1>Lab 5.2 - Lots of Balls<a class="headerlink" href="#lab-5-2-lots-of-balls" title="Permalink to this headline">¶</a></h1>
+<p>In this lab, you will use cloning to create many identical sprites without having to reprogram each one individually.</p>
+<div class="section" id="part-1-follow-the-bouncing-sprites">
+<h2>Part 1 - Follow the bouncing sprites<a class="headerlink" href="#part-1-follow-the-bouncing-sprites" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Create a Snap! program that contains a single sprite, choose from available costumes (i.e. basketballs, hearts, stars, balloons, Alonzo, doves). When the green flag is clicked, the sprite should go to the center of the stage, pick a random direction, and start moving in the chosen direction. If the sprite hits a wall, it should bounce off and keep moving.</p></li>
+<li><p>Modify the program to be controlled by the stage rather than by the sprite itself.  When the spacebar is pressed, the stage should broadcast a message that triggers the sprite’s movement.  Pressing the spacebar again should restart the sprite’s movement, including a new speed and new direction.</p></li>
+<li><p>What would you need to do to add a second bouncing sprite (that behaved in the same way) to the program? What about 10 sprites? 100 sprites? What would happen if you wanted to change the speed of all the bouncing sprites in the program after you had created 100?</p></li>
+</ol>
+</div>
+<div class="section" id="part-2-clones">
+<h2>Part 2 - Clones<a class="headerlink" href="#part-2-clones" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>Modify your program so that, instead of a single sprite restarting each time the spacebar is pressed, a new clone of that sprite is created.  You’ll want to use the <code class="docutils literal notranslate"><span class="pre">Create</span> <span class="pre">a</span> <span class="pre">Clone</span> <span class="pre">of</span></code> and <code class="docutils literal notranslate"><span class="pre">When</span> <span class="pre">I</span> <span class="pre">starts</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">clone</span></code> blocks in place of <code class="docutils literal notranslate"><span class="pre">Broadcast</span> <span class="pre">block</span></code> and <code class="docutils literal notranslate"><span class="pre">When</span> <span class="pre">I</span> <span class="pre">Receive</span></code> block.</p>
+<p><img alt="Create a Clone of" src="../_images/create_a_clone_of.png" /></p>
+<p><img alt="When I starts as a clone" src="../_images/when_i_start_as_a_clone.png" /></p>
+<p><img alt="Broadcast block" src="../_images/broadcast.png" /></p>
+<p><img alt="When I Receive block" src="../_images/when_i_receive.png" />.</p>
+</li>
+<li><p>What happens to the original (“master”) sprite each time the spacebar is pressed?  Does that seem useful?  What role should the original sprite play now that we’re cloning?</p></li>
+<li><p>Modify the program so that the original (“master”) sprite hides at the beginning of the program and each new sprite appears when it is created.</p></li>
+<li><p>BONUS: Assign each clone a different value for some properties, such as speed, color, or size.  Try controlling these values from the master sprite rather than having each clone choose its own.</p></li>
+</ol>
+</div>
+<div class="section" id="grading-scheme-rubric">
+<h2>Grading Scheme/Rubric<a class="headerlink" href="#grading-scheme-rubric" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Lab 5.2 Criteria</strong></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1.1 One bouncing sprite</p></td>
+<td><p>0.5 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.2 Sprite controlled by stage</p></td>
+<td><p>0.5 points</p></td>
+</tr>
+<tr class="row-even"><td><p>2.1 Clones created by stage</p></td>
+<td><p>0.5 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>2.3 Hide master sprite</p></td>
+<td><p>0.5 points</p></td>
+</tr>
+<tr class="row-even"><td><p>2.4 Bonus: Sprites have different properties</p></td>
+<td><p>0.5 points</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>PROJECT TOTAL</strong></p></td>
+<td><p><strong>2.5 points</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

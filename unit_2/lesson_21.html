@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 2.1: Loops &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lesson 2.1: Loops</a><ul>
+<li><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
+<li><a class="reference internal" href="#materials-preparation">Materials/Preparation</a></li>
+<li><a class="reference internal" href="#pacing-guide">Pacing Guide</a></li>
+<li><a class="reference internal" href="#instructor-s-notes">Instructor’s Notes</a><ul>
+<li><a class="reference internal" href="#lecture">Lecture</a><ul>
+<li><a class="reference internal" href="#introduce-and-discuss-concepts-of-code-redundancy-and-readability">Introduce and discuss concepts of code redundancy and readability</a></li>
+<li><a class="reference internal" href="#introduce-loops">Introduce loops</a></li>
+<li><a class="reference internal" href="#walk-through-examples-of-repeat-block-and-forever-block">Walk through examples of <code class="docutils literal notranslate"><span class="pre">Repeat</span></code> Block and <code class="docutils literal notranslate"><span class="pre">Forever</span></code> Block</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#activity">Activity</a></li>
+<li><a class="reference internal" href="#debrief">Debrief</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#accommodation-differentiation">Accommodation/Differentiation</a></li>
+<li><a class="reference internal" href="#forum-discussion">Forum discussion</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_2/lesson_21.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lesson-2-1-loops">
+<h1>Lesson 2.1: Loops<a class="headerlink" href="#lesson-2-1-loops" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>Students will be able to…</p>
+<ul class="simple">
+<li><p>Define <strong>loop</strong> in a programming context.</p></li>
+<li><p>Explain why loops are useful.</p></li>
+<li><p>Implement simple repeat and forever loops in Snap!.</p></li>
+<li><p>Apply loops to reduce redundancy in code.</p></li>
+</ul>
+</div>
+<div class="section" id="materials-preparation">
+<h2>Materials/Preparation<a class="headerlink" href="#materials-preparation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="do_now_21.html"><span class="doc std std-doc">Do Now 2.1: Intro Loops</span></a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/slidedecks/TEALS%20SNAP%202.1.pptx">2.1 Slide Deck</a></p></li>
+<li><p><span class="xref myst">Geometry Exterior Angles Review</span></p></li>
+<li><p><a class="reference internal" href="lab_21.html"><span class="doc std std-doc">Lab 2.1 handout Squares and Triangles Redux</span></a> (<a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/Unit%202%20Word/Lab%202.1%20Triangles%20and%20Squares%20Redux.docx">docx</a>) (<a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/Unit%202%20PDF/Lab%202.1%20Triangles%20and%20Squares%20Redux.pdf">pdf</a>).</p></li>
+<li><p><a class="reference external" href="https://www.tealsk12.org/intro-to-computer-science-sample-solutions/">Lab 2.1 Solution</a></p></li>
+<li><p>Repeating Examples</p>
+<ul>
+<li><p><a class="reference external" href="https://pmm.nasa.gov/education/water-cycle">water cycle</a></p></li>
+<li><p><a class="reference external" href="https://m.poets.org/poetsorg/poem/still-i-rise">“Still I Rise”</a></p></li>
+<li><p><a class="reference external" href="https://genius.com/Pharrell-williams-happy-lyrics">“Happy”</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=brettwo&amp;ProjectName=Lesson%202.1%20Example">Snap! example</a></p></li>
+<li><p><a class="reference external" href="https://www.tealsk12.org/intro-to-computer-science-sample-solutions/">Lab 2.1 Solution</a></p></li>
+<li><p><a class="reference internal" href="unit_2_tips.html"><span class="doc std std-doc">Unit 2 Tips</span></a>.</p></li>
+<li><p>Video Resource: <a class="reference external" href="https://youtu.be/XbZqfRGPom0">https://youtu.be/XbZqfRGPom0</a></p>
+<ul>
+<li><p>Video Quiz: See Additional Curriculum Materials accessed from the TEALS Dashboard.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="pacing-guide">
+<h2>Pacing Guide<a class="headerlink" href="#pacing-guide" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Duration</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5 minutes</p></td>
+<td><p>Welcome, attendance, bell work, announcements</p></td>
+</tr>
+<tr class="row-odd"><td><p>15 minutes</p></td>
+<td><p>Lecture and examples</p></td>
+</tr>
+<tr class="row-even"><td><p>25 minutes</p></td>
+<td><p>Squares and Triangles Activity</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 minutes</p></td>
+<td><p>Debrief and wrap-up</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="instructor-s-notes">
+<h2>Instructor’s Notes<a class="headerlink" href="#instructor-s-notes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lecture">
+<h3>Lecture<a class="headerlink" href="#lecture" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="introduce-and-discuss-concepts-of-code-redundancy-and-readability">
+<h4>Introduce and discuss concepts of code redundancy and readability<a class="headerlink" href="#introduce-and-discuss-concepts-of-code-redundancy-and-readability" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Remind students that a program can be written in many different ways that are functionally equivalent.</p></li>
+<li><p>Ask students to speculate as to why one version of a program might be better or worse.</p></li>
+<li><p>Possible answers: more efficient (in time or space), shorter code, more elegant/readable code.</p></li>
+<li><p>Use <a class="reference external" href="https://snap.berkeley.edu/snap/snap.html#present:Username=andrewspiece&amp;ProjectName=Lesson%202.1%20Example">this example</a> to demonstrate unreadable code and give examples on how the <code class="docutils literal notranslate"><span class="pre">repeat</span></code> blocks (loops) can help make more concise scripting.</p></li>
+<li><p>Show students the code, ask what it does, then ask if they can think of ways to improve it.</p></li>
+<li><p>Attempt to get students to realize that the code is <em>redundant</em> and could be simplified if there were a way to execute a block of code more than once.</p></li>
+</ul>
+</div>
+<div class="section" id="introduce-loops">
+<h4>Introduce loops<a class="headerlink" href="#introduce-loops" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p>Begin with general definition: <em>A type of block that causes other code to run multiple times in succession</em>.</p></li>
+<li><p>Use real life loops to introduce the concept: <a class="reference external" href="https://pmm.nasa.gov/education/water-cycle">water cycle</a>, eating one spoonful at a time,use a poem like <a class="reference external" href="https://m.poets.org/poetsorg/poem/still-i-rise">“Still I Rise”</a> by Maya Angelou or a song with a repetitive hook like <a class="reference external" href="https://genius.com/Pharrell-williams-happy-lyrics">“Happy”</a> by Pharrell Williams. If you choose to use a song, you can break students into groups and have each group choose their own song.  Make sure to ask students to identify a song that has a repetitive hook without explicit lyrics.</p></li>
+<li><p>Introduce Snap! specific loops:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Repeat</span></code> block runs the body of the loop the specified number of times.</p>
+<p><img alt="Repeat Block" src="../_images/repeat.png" /></p>
+<ul class="simple">
+<li><p>Number of iterations can be a value, variable, or reporter.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Forever</span></code> block runs the body of the loop nonstop until the script is ended.</p>
+<p><img alt="Forever Block" src="../_images/forever.png" /></p>
+</li>
+<li><p>Can be stopped either by clicking the stop sign or by any version of <code class="docutils literal notranslate"><span class="pre">Stop</span></code> Block.</p>
+<p><img alt="Stop Block" src="../_images/stop.png" /></p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Repeat</span> <span class="pre">Until</span></code> runs the body of the loop until the specified condition becomes true.</p>
+<p><img alt="Repeat Until Block" src="../_images/repeat_until.png" /></p>
+</li>
+<li><p>Save detailed discussion of this loop until conditionals are introduced.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="walk-through-examples-of-repeat-block-and-forever-block">
+<h4>Walk through examples of <code class="docutils literal notranslate"><span class="pre">Repeat</span></code> Block and <code class="docutils literal notranslate"><span class="pre">Forever</span></code> Block<a class="headerlink" href="#walk-through-examples-of-repeat-block-and-forever-block" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Emphasize usefulness in reducing redundancy and complexity, especially for repetitive tasks.</p></li>
+<li><p>Simple examples are <a class="reference external" href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=brettwo&amp;ProjectName=Lesson%202.1%20Example">here</a>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="activity">
+<h3>Activity<a class="headerlink" href="#activity" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Direct students to complete <a class="reference internal" href="lab_21.html"><span class="doc std std-doc">“Squares and Triangles Redux”</span></a> individually.</p></li>
+<li><p>If available, students should use their solutions to Lab 1.3 (“Squares and Triangles and Stars, Oh My!”) as a starting point.  Ensure students “Save as…” before starting on the new lab to not overwrite their original project (part 1.1).</p></li>
+<li><p>If student solutions for Lab 1.3 are not available, or are not correct, provide a correct implementation (the solution to Lab 1.3 can be found on the TEALS Dashboard under Additional Curriculum Materials).</p></li>
+<li><p>Encourage students to try to use as few blocks and have as little code duplication as possible to draw each shape while still creating understandable scripts. Asa reminder you may want to make the <span class="xref myst">Geometry Exterior Angles Review</span> showing various shapes and their respective angles as a reference for students through unit 2.</p></li>
+<li><p>Once students complete part 2.1, the remaining parts should go much more quickly as they all follow the same basic pattern.</p></li>
+</ul>
+</div>
+<div class="section" id="debrief">
+<h3>Debrief<a class="headerlink" href="#debrief" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Discuss one or two student solutions to part 2.2.</p></li>
+<li><p>Ask students to think about what the code would look like without loops.</p></li>
+<li><p>Discuss one or two students solutions to part 3.1.</p></li>
+<li><p>Point out how unwieldy the code for these two shapes would be without loops.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="accommodation-differentiation">
+<h2>Accommodation/Differentiation<a class="headerlink" href="#accommodation-differentiation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>More advanced students can add additional shapes, including a five-pointed star without interior lines.</p></li>
+<li><p>Particularly advanced students can be encouraged to build pictures by combining multiple shapes (e.g. a house built of squares of various sizes).</p></li>
+</ul>
+</div>
+<div class="section" id="forum-discussion">
+<h2>Forum discussion<a class="headerlink" href="#forum-discussion" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forums.tealsk12.org/c/intro-unit-2-loops/lesson-2-1-loops">Lesson 2.1 Loops</a> (TEALS Discourse account required).</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

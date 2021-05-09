@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 6.4: Building a Plan &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lesson 6.4: Building a Plan</a><ul>
+<li><a class="reference internal" href="#learning-objectives">Learning Objectives</a><ul>
+<li><a class="reference internal" href="#emphasize-with-students">Emphasize with students</a><ul>
+<li><a class="reference internal" href="#curriculum-competencies-prototype-test-and-make">Curriculum Competencies - Prototype, Test, and Make</a></li>
+<li><a class="reference internal" href="#curriculum-competencies-applied-technologies">Curriculum Competencies - Applied Technologies</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#reference">Reference</a></li>
+<li><a class="reference internal" href="#materials-preparation">Materials/Preparation</a></li>
+<li><a class="reference internal" href="#pacing-guide">Pacing Guide</a></li>
+<li><a class="reference internal" href="#instructor-s-notes">Instructor’s Notes</a><ul>
+<li><a class="reference internal" href="#review">Review</a></li>
+<li><a class="reference internal" href="#spec-writing">Spec writing</a></li>
+<li><a class="reference internal" href="#implementation-plan">Implementation plan</a></li>
+<li><a class="reference internal" href="#debrief">Debrief</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#accommodation-differentiation">Accommodation/Differentiation</a></li>
+<li><a class="reference internal" href="#forum-discussion">Forum discussion</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_6/lesson_64.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lesson-6-4-building-a-plan">
+<h1>Lesson 6.4: Building a Plan<a class="headerlink" href="#lesson-6-4-building-a-plan" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>Students will be able to…</p>
+<ul class="simple">
+<li><p>Break down, and identify the main technical components needed for the functional project specifications (scenarios).</p></li>
+<li><p>Explain the purpose of each technical component.</p>
+<ul>
+<li><p>Develop the project idea into a full, detailed specification.</p></li>
+<li><p>Create a plan that includes specific steps or a list of bite-sized tasks.</p></li>
+<li><p>Estimate time required for tasks.</p></li>
+</ul>
+</li>
+</ul>
+<div class="section" id="emphasize-with-students">
+<h3>Emphasize with students<a class="headerlink" href="#emphasize-with-students" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="curriculum-competencies-prototype-test-and-make">
+<h4>Curriculum Competencies - Prototype, Test, and Make<a class="headerlink" href="#curriculum-competencies-prototype-test-and-make" title="Permalink to this headline">¶</a></h4>
+<p>From Lessons 6.3 to 6.5 you will be practicing an iterative and incremental project management work flow.  In Lesson 6.3 you identified user scenarios.  Now in Lesson 6.4 you identify what technical components are needed for each scenario,  and define all the tasks that need to be done.  You are not “coding” yet.</p>
+<p>Each defined task, or step, should be bite-sized, and specific enough to do.<br />
+This plan should include testing done by you, as the developer, and by other users.
+As you progress, gather feedback from users/testers over time, and make changes to your design, and plan, as needed.</p>
+</div>
+<div class="section" id="curriculum-competencies-applied-technologies">
+<h4>Curriculum Competencies - Applied Technologies<a class="headerlink" href="#curriculum-competencies-applied-technologies" title="Permalink to this headline">¶</a></h4>
+<p>Your classroom may have a diverse student population, and include English Language Learning (ELL) students.<br />
+Following a project management flow helps ensure that the development process is simple, clear to follow, well documented, and easy to share and evaluate.  Practicing these skills will help students collaborate and share their work in diverse classrooms.  These skills prepare students to engage more successfully in an increasingly global technology industry.</p>
+</div>
+</div>
+</div>
+<div class="section" id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www2.gov.bc.ca/gov/content/education-training/k-12/teach/teaching-tools/english-language-learning">English Language Learning</a></p>
+</div>
+<div class="section" id="materials-preparation">
+<h2>Materials/Preparation<a class="headerlink" href="#materials-preparation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="unit_6_tips.html"><span class="doc std std-doc">Unit 6 Tips</span></a></p></li>
+<li><p><a class="reference internal" href="project_6.html"><span class="doc std std-doc">Final Project Specifications</span></a> (<a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Projects/Projects%20Word/Project%206%20Final%20Project.docx?raw=true">docx</a>)(<a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Projects/Projects%20PDF/Project%206%20Final%20Project.pdf?raw=true">pdf</a>)</p></li>
+<li><p><a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Unit%206%20Word/Final%20Project%20Plan%20Organizer.docx?raw=true">Final Project Plan Organizer</a></p></li>
+<li><p><a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Unit%206%20Word/Final%20Project%20Development%20Plan.docx?raw=true">Final Project Development Plan</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/aV6LFVXxd34">Examples of TEALS Final Projects</a></p></li>
+</ul>
+</div>
+<div class="section" id="pacing-guide">
+<h2>Pacing Guide<a class="headerlink" href="#pacing-guide" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Duration</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5 minutes</p></td>
+<td><p>Welcome, attendance, bell work, announcements</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 minutes</p></td>
+<td><p>Review feature lists and wire frames</p></td>
+</tr>
+<tr class="row-even"><td><p>20 minutes</p></td>
+<td><p>Spec writing</p></td>
+</tr>
+<tr class="row-odd"><td><p>15 minutes</p></td>
+<td><p>Building implementation plan</p></td>
+</tr>
+<tr class="row-even"><td><p>5 minutes</p></td>
+<td><p>Debrief and wrap-up</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="instructor-s-notes">
+<h2>Instructor’s Notes<a class="headerlink" href="#instructor-s-notes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="review">
+<h3>Review<a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Ask students to take out their feature lists and wire frames from <a class="reference internal" href="lesson_63.html"><span class="doc std std-doc">Lesson 6.3</span></a>. They will be using these to develop a more detailed specification and plan for their project today.</p></li>
+<li><p>If time allows, ask one or two students to share their feature list and/or wire frame and discuss with the class.</p></li>
+<li><p>Ensure that students have an understanding of the proper level of detail at this point.</p></li>
+</ul>
+</div>
+<div class="section" id="spec-writing">
+<h3>Spec writing<a class="headerlink" href="#spec-writing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Using the details from their pitch, their feature lists, their wire frames, and the feedback they’ve received, students should fill out the rest of the [plan organizer].</p></li>
+<li><p>It is <strong>VITAL</strong> at this stage that students be as detailed and thorough as they can.  Any missing information will complicate the process later when they realize what was left out.  Encourage students to take their time and make sure they hit everything.</p></li>
+<li><p>While this process is happening, instructors should circulate through the class and check-in with student.  Verify that they have a complete, well-thought out idea that is feasible to complete in the available time.</p></li>
+<li><p>If you have concerns about a student’s ability to complete the proposed project, help them scope down by removing or simplifying features.</p></li>
+</ul>
+</div>
+<div class="section" id="implementation-plan">
+<h3>Implementation plan<a class="headerlink" href="#implementation-plan" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Students should use the details built in their plan organizer to list the tasks necessary on their <a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Unit%206%20Word/Final%20Project%20Development%20Plan.docx?raw=true">Final Project Development Plan</a>.</p></li>
+<li><p>Emphasize to students that tasks should be at a very low level of granularity (hence the time requirement being specified in minutes).  If a single task has a time estimate of more than a few hours, the student should try to break the task into smaller pieces.</p></li>
+<li><p>Ensure that students do not skip “trivial” or “simple” tasks (such as building a script they have written before) or non-coding tasks (such as developing graphics) in their plan.</p></li>
+</ul>
+</div>
+<div class="section" id="debrief">
+<h3>Debrief<a class="headerlink" href="#debrief" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>As class ends, remind students that their spec and implementation plan will be their guides throughout the process.  They should update them each day and keep them with them at all times.</p></li>
+<li><p>Ideally, anytime there is a question about the requirements or scope of the project, the spec should have the answer.  If not, it’s a new idea and the spec needs to be updated accordingly.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="accommodation-differentiation">
+<h2>Accommodation/Differentiation<a class="headerlink" href="#accommodation-differentiation" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="forum-discussion">
+<h2>Forum discussion<a class="headerlink" href="#forum-discussion" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forums.tealsk12.org/c/intro-unit-6/lesson-6-4-building-a-plan">Lesson 6.4 - Building a Plan</a> (TEALS Discourse account required).</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

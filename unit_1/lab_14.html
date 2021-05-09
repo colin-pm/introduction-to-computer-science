@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 1.4: Sprites in Action &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lab 1.4: Sprites in Action</a><ul>
+<li><a class="reference internal" href="#part-1-run-spot-run">Part 1: Run, Spot, Run</a></li>
+<li><a class="reference internal" href="#part-2-here-be-dragons">Part 2: Here be Dragons</a></li>
+<li><a class="reference internal" href="#part-3-run-away">Part 3: Run Away</a></li>
+<li><a class="reference internal" href="#grading-scheme-rubric">Grading Scheme/Rubric</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_1/lab_14.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lab-1-4-sprites-in-action">
+<h1>Lab 1.4: Sprites in Action<a class="headerlink" href="#lab-1-4-sprites-in-action" title="Permalink to this headline">¶</a></h1>
+<p>In this lab, you will use costumes and movement to create simple Snap! animations.</p>
+<div class="section" id="part-1-run-spot-run">
+<h2>Part 1: Run, Spot, Run<a class="headerlink" href="#part-1-run-spot-run" title="Permalink to this headline">¶</a></h2>
+<p>1.1) In a New Snap! project, click on the file menu, then click costumes.  Import the costumes <code class="docutils literal notranslate"><span class="pre">dog2a</span></code> and <code class="docutils literal notranslate"><span class="pre">dog2b</span></code>.</p>
+<p>1.2) Write a script to make the sprite change costume each time the space bar is pressed. (The sprite should switch back and forth between the two costumes.)</p>
+<p>1.3) Add to your script so that the sprite will</p>
+<ol class="simple">
+<li><p>Face to the left.</p></li>
+<li><p>Move a few steps.</p></li>
+<li><p>Change costume when the left arrow key is pressed.</p></li>
+</ol>
+<p><em>In your window, the dog should look like it is walking when you press the left arrow key repeatedly.</em></p>
+<p>1.4) Enhance your script to look as though the dog can walk to the right with you click the <code class="docutils literal notranslate"><span class="pre">right</span> <span class="pre">arrow</span></code> key.</p>
+</div>
+<div class="section" id="part-2-here-be-dragons">
+<h2>Part 2: Here be Dragons<a class="headerlink" href="#part-2-here-be-dragons" title="Permalink to this headline">¶</a></h2>
+<p>1.1) Create a new sprite. Following the same steps as in part 1.1, import the costumes <code class="docutils literal notranslate"><span class="pre">dragon1-a</span></code> and <code class="docutils literal notranslate"><span class="pre">dragon1-b</span></code>.</p>
+<p>1.2) Write a script to make the sprite appear to breathe fire when the <code class="docutils literal notranslate"><span class="pre">f</span></code> key is pressed.  The sprite should switch to the <code class="docutils literal notranslate"><span class="pre">fire-breathing</span></code> costume for a few seconds, then switch back to the original costume.</p>
+<p>1.3) Modify your script so that the dragon <code class="docutils literal notranslate"><span class="pre">attacks</span></code> the mouse pointer when the <code class="docutils literal notranslate"><span class="pre">f</span></code> key is pressed. When the <code class="docutils literal notranslate"><span class="pre">f</span></code> key is pressed, the dragon should take the following actions in order:</p>
+<ol class="simple">
+<li><p>Make sure it is in the “normal” costume</p></li>
+<li><p>Point at the mouse pointer</p></li>
+<li><p>Glide to the mouse pointer’s position</p></li>
+<li><p>Change to the “fire-breathing” costume</p></li>
+<li><p>Pause to breathe fire</p></li>
+<li><p>Change back to the “normal” costume</p></li>
+</ol>
+</div>
+<div class="section" id="part-3-run-away">
+<h2>Part 3: Run Away<a class="headerlink" href="#part-3-run-away" title="Permalink to this headline">¶</a></h2>
+<p>3.1) Add another sprite to your program.  (This sprite can have any costume you choose).</p>
+<p>3.2) Write a script to make this new sprite point away from the dragon and move when the <code class="docutils literal notranslate"><span class="pre">r</span></code> key is pressed.</p>
+<p>3.3) Using the <code class="docutils literal notranslate"><span class="pre">Broadcast</span></code> and <code class="docutils literal notranslate"><span class="pre">When</span> <span class="pre">I</span> <span class="pre">Receive</span></code> blocks, modify your script so that instead of moving when the <code class="docutils literal notranslate"><span class="pre">r</span></code> key is pressed, the new sprite moves when the dragon <code class="docutils literal notranslate"><span class="pre">attacks.</span></code>  The <code class="docutils literal notranslate"><span class="pre">fleeing</span></code> sprite should move when the dragon starts breathing fire.</p>
+<p>3.4) Add a second sprite that runs away from the dragon as well.</p>
+</div>
+<div class="section" id="grading-scheme-rubric">
+<h2>Grading Scheme/Rubric<a class="headerlink" href="#grading-scheme-rubric" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p><strong>Lab 1.4 Criteria</strong></p></th>
+<th class="text-align:left head"><p>Points</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>2.2 Dragon breathes fire</p></td>
+<td class="text-align:left"><p>0.25</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>2.3 Dragon attacks mouse pointer correctly</p></td>
+<td class="text-align:left"><p>0.75</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>3.2 A sprite runs away from dragon</p></td>
+<td class="text-align:left"><p>0.25</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>3.3 Sprite runs away when dragon breathes fire</p></td>
+<td class="text-align:left"><p>0.25</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>3.3 Use of the <code class="docutils literal notranslate"><span class="pre">broadcast</span></code> and <code class="docutils literal notranslate"><span class="pre">when</span> <span class="pre">I</span> <span class="pre">receive</span></code> blocks</p></td>
+<td class="text-align:left"><p>0.25</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>3.4 Another sprite runs away too</p></td>
+<td class="text-align:left"><p>0.25</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><strong>PROJECT TOTAL</strong></p></td>
+<td class="text-align:left"><p><strong>2.0 points</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

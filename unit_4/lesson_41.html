@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 4.1: Intro to Lists &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lesson 4.1: Intro to Lists</a><ul>
+<li><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
+<li><a class="reference internal" href="#materials-preparation">Materials/Preparation</a></li>
+<li><a class="reference internal" href="#pacing-guide">Pacing Guide</a></li>
+<li><a class="reference internal" href="#instructor-s-notes">Instructor’s Notes</a><ul>
+<li><a class="reference internal" href="#introductory-discussion">Introductory discussion</a></li>
+<li><a class="reference internal" href="#activity">Activity</a></li>
+<li><a class="reference internal" href="#debrief">Debrief</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#accommodations-differentiation">Accommodations/Differentiation</a></li>
+<li><a class="reference internal" href="#forum-discussion">Forum discussion</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_4/lesson_41.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lesson-4-1-intro-to-lists">
+<h1>Lesson 4.1: Intro to Lists<a class="headerlink" href="#lesson-4-1-intro-to-lists" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>Students will be able to…</p>
+<ul class="simple">
+<li><p>Explain the concept of a <code class="docutils literal notranslate"><span class="pre">list</span></code> in a programming context.</p></li>
+<li><p>Identify scenarios in which lists are useful.</p></li>
+</ul>
+</div>
+<div class="section" id="materials-preparation">
+<h2>Materials/Preparation<a class="headerlink" href="#materials-preparation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/slidedecks/TEALS%20SNAP%204.1.pptx">4.1 Slide Deck</a></p></li>
+<li><p><a class="reference internal" href="unit_4_tips.html"><span class="doc std std-doc">Unit 4 Tips</span></a>.</p></li>
+<li><p>Paper/writing implements for each group of students.</p></li>
+<li><p>Large poster paper and markers will allow for display of the algorithms, but standard paper will work fine.</p></li>
+</ul>
+</div>
+<div class="section" id="pacing-guide">
+<h2>Pacing Guide<a class="headerlink" href="#pacing-guide" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Duration</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5 minutes</p></td>
+<td><p>Welcome, attendance, bell work, announcements</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 minutes</p></td>
+<td><p>Introductory discussion</p></td>
+</tr>
+<tr class="row-even"><td><p>10 minutes</p></td>
+<td><p>Students write Solar System algorithm</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 minutes</p></td>
+<td><p>Debrief</p></td>
+</tr>
+<tr class="row-even"><td><p>10 minutes</p></td>
+<td><p>Translate algorithms into Snap! pseudocode</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 minutes</p></td>
+<td><p>Debrief and wrap-up</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="instructor-s-notes">
+<h2>Instructor’s Notes<a class="headerlink" href="#instructor-s-notes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="introductory-discussion">
+<h3>Introductory discussion<a class="headerlink" href="#introductory-discussion" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Shortly describe the Solar System and hook your students in with a way (in programming) to collect and store new information and discoveries.</p></li>
+</ul>
+</div>
+<div class="section" id="activity">
+<h3>Activity<a class="headerlink" href="#activity" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>In small groups, students will write an algorithm for adding new Solar System discoveries to a collection of older ones. As with the PB&amp;J activity, the process should be complete and detailed so that a person can unambiguously follow the steps.</p></li>
+<li><p>The process itself will seem relatively simple.  Ensure students think not only about the steps to be taken but the necessary materials and resources.</p></li>
+<li><p>Ensure that the algorithm would work for any discovery of any name size and does not make assumptions. e.g SUPER MEGA COOL ASTEROID, etc.</p></li>
+<li><p>Pay particular attention to when the various materials are needed.</p></li>
+<li><p>The key here is that the student will need to constantly be referencing this same pool of discoveries e.g. Pool, Pool + 1 discovery, Pool + 1 discovery + another etc. etc.</p></li>
+<li><p>Once discussion of the algorithm is complete, instruct students to think about how they would write a Snap! program to complete this task.  They need not write actual code, but should write pseudocode to attempt to solve the problem.</p></li>
+<li><p>After groups have finished, explain to them that usually scientists organize their discoveries alphabetically not by recently discovered. Challenge them to create an algorithm that organizes their new discoveries with their old discoveries alphabetically. After this is done, challenge them to create it in SNAP.</p></li>
+<li><p>The ultimate conclusion should be that they need a way to store the entire collection of discoveries, and operate on individual parts of the collection.</p></li>
+</ul>
+</div>
+<div class="section" id="debrief">
+<h3>Debrief<a class="headerlink" href="#debrief" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>In attempting to write pseudocode, students should realize that they need variables to store the discoveries, but do not know ahead of time how many variables will be necessary.</p></li>
+<li><p>Clever students may want to simply store the message in a single variable using the <code class="docutils literal notranslate"><span class="pre">join</span></code> block.  This approach can work if they choose an unambiguous delimiter (space won’t work if there are multi-word sections of the message), and is effectively the same as using a list.</p></li>
+<li><p>Point out that, thus far, they have not seen a way to store an arbitrary number of data values. They have needed a separate variable for each value, which must be created ahead of time.</p></li>
+<li><p>Briefly introduce the concept of a list as a means of storing multiple values in a single location.  Lists in Snap! have the useful property of not having a static size, so any number of values can be added at any time.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="accommodations-differentiation">
+<h2>Accommodations/Differentiation<a class="headerlink" href="#accommodations-differentiation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>As in the PB&amp;J activity, discourage stronger students from dominating the conversation and instead ask them to take on a leadership role and help other group members find issues.</p></li>
+<li><p>Struggling students can be given permission to use a higher level of abstraction, ignoring certain details that other students will attend to.</p></li>
+</ul>
+</div>
+<div class="section" id="forum-discussion">
+<h2>Forum discussion<a class="headerlink" href="#forum-discussion" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forums.tealsk12.org/c/intro-unit-4-lists/lesson-4-1-intro-to-lists">Lesson 4.1: Intro to Lists</a> (TEALS Discourse account required).</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

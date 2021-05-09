@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 1.3: Triangles and Squares and Stars, Oh My &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lab 1.3: Triangles and Squares and Stars, Oh My</a><ul>
+<li><a class="reference internal" href="#part-1-drawing-a-triangle">Part 1: Drawing a triangle</a></li>
+<li><a class="reference internal" href="#part-2-adding-more-shapes">Part 2: Adding more shapes</a></li>
+<li><a class="reference internal" href="#grading-scheme-rubric">Grading Scheme/Rubric</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_1/lab_13.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lab-1-3-triangles-and-squares-and-stars-oh-my">
+<h1>Lab 1.3: Triangles and Squares and Stars, Oh My<a class="headerlink" href="#lab-1-3-triangles-and-squares-and-stars-oh-my" title="Permalink to this headline">¶</a></h1>
+<p>In this lab, you will write your first Snap! programs to draw some simple shapes on the stage.</p>
+<div class="section" id="part-1-drawing-a-triangle">
+<h2>Part 1: Drawing a triangle<a class="headerlink" href="#part-1-drawing-a-triangle" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>Modify your <em>Snap!</em> program so that a triangle is drawn when the number 1 is pressed on the keyboard.</p>
+<p><img alt="Angles of a triangle diagram" src="../_images/equilateral_triangle.png" /></p>
+</li>
+<li><p>Modify your script so that the sprite says the word “triangle” while it draws. The sprite should stop saying “triangle” once it has finished drawing.</p></li>
+<li><p>Modify your script so that pressing the space bar clears the pen marks from the stage.</p></li>
+</ol>
+</div>
+<div class="section" id="part-2-adding-more-shapes">
+<h2>Part 2: Adding more shapes<a class="headerlink" href="#part-2-adding-more-shapes" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>Now that you’ve drawn a triangle, add code to draw the shapes in the following table. Each shape should be drawn when the number next to it is pressed on the keyboard. (For example, pressing 3 on the keyboard should draw a diamond.)</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>When this key is pressed…</p></th>
+<th class="head"><p>Draw a …</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Equilateral triangle</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Square</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Diamond</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Pentagon</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Parallelogram (“leaning rectangle”)</p></td>
+</tr>
+<tr class="row-odd"><td><p>6 (optional)</p></td>
+<td><p>5-pointed star</p></td>
+</tr>
+</tbody>
+</table>
+<p>You may want to draw a diagram like the one above of a triangle to figure out the angles in each shape.</p>
+</li>
+<li><p>Modify your script so that as each shape is being drawn, the sprite is saying the name of shape.  The sprite should stop saying the name of the shape when it is finished drawing.</p></li>
+<li><p>Modify your script so that each different shape is drawn in a <em>different</em> color and with a <em>different line thickness</em>. So, for example, if the square is drawn in blue with a line thickness of 3, each other shape must be drawn in a color that is not blue and with a line thickness that is not 3.</p></li>
+<li><p>Modify your script so that the sprite is hidden when it is not drawing.  This is will make sure that the sprite is not obstructing the view of your beautiful artwork!</p></li>
+</ol>
+</div>
+<div class="section" id="grading-scheme-rubric">
+<h2>Grading Scheme/Rubric<a class="headerlink" href="#grading-scheme-rubric" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Lab 1.3 Criteria</strong></p></th>
+<th class="head"><p>Points</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1 - Equilateral Triangle</p></td>
+<td><p>0.25 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>2 - Square</p></td>
+<td><p>0.25 points</p></td>
+</tr>
+<tr class="row-even"><td><p>3 - Diamond</p></td>
+<td><p>0.5 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>4 - Pentagon</p></td>
+<td><p>0.5 points</p></td>
+</tr>
+<tr class="row-even"><td><p>5 - Parallelogram</p></td>
+<td><p>0.5 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Star (bonus!)</p></td>
+<td><p>0.5 points</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>PROJECT TOTAL</strong></p></td>
+<td><p><strong>2.5 points</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

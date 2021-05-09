@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 4.4: List Practice II &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lesson 4.4: List Practice II</a><ul>
+<li><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
+<li><a class="reference internal" href="#materials-preparation">Materials/Preparation</a></li>
+<li><a class="reference internal" href="#pacing-guide">Pacing Guide</a></li>
+<li><a class="reference internal" href="#instructor-s-notes">Instructor’s Notes</a><ul>
+<li><a class="reference internal" href="#review">Review</a></li>
+<li><a class="reference internal" href="#activity">Activity</a></li>
+<li><a class="reference internal" href="#debrief">Debrief</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#accommodations-differentiation">Accommodations/Differentiation</a></li>
+<li><a class="reference internal" href="#forum-discussion">Forum discussion</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_4/lesson_44.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lesson-4-4-list-practice-ii">
+<h1>Lesson 4.4: List Practice II<a class="headerlink" href="#lesson-4-4-list-practice-ii" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>Students will be able to…</p>
+<ul class="simple">
+<li><p>Traverse a list, accessing each element one at a time.</p></li>
+<li><p>Perform operations combining all elements in a list.</p></li>
+<li><p>Select defined subsets of elements in a list.</p></li>
+</ul>
+</div>
+<div class="section" id="materials-preparation">
+<h2>Materials/Preparation<a class="headerlink" href="#materials-preparation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="do_now_44.html"><span class="doc std std-doc">Do Now 4.4: Traversing List</span></a></p></li>
+<li><p><a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/slidedecks/TEALS%20SNAP%204.4.pptx">4.4 Slide Deck</a></p></li>
+<li><p><a class="reference internal" href="lab_44.html"><span class="doc std std-doc">Lab 4.4 handout (Number Cruncher)</span></a> (<a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/Unit%204%20Word/Lab%204.4%20Number%20Cruncher.docx">docx</a>) (<a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/Unit%204%20PDF/Lab%204.4%20Number%20Cruncher.pdf">pdf</a>)</p></li>
+<li><p><a class="reference internal" href="unit_4_tips.html"><span class="doc std std-doc">Unit 4 Tips</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="pacing-guide">
+<h2>Pacing Guide<a class="headerlink" href="#pacing-guide" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Duration</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5 minutes</p></td>
+<td><p>Welcome, attendance, bell work, announcements</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 minutes</p></td>
+<td><p>Review and debrief lab 4.3</p></td>
+</tr>
+<tr class="row-even"><td><p>25 minutes</p></td>
+<td><p>Number Cruncher Activity</p></td>
+</tr>
+<tr class="row-odd"><td><p>15 minutes</p></td>
+<td><p>Debrief and wrap-up</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="instructor-s-notes">
+<h2>Instructor’s Notes<a class="headerlink" href="#instructor-s-notes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="review">
+<h3>Review<a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Ask students to define <strong>traversal</strong> and outline the basic script pattern.</p>
+<ul class="simple">
+<li><p>You need not write a script here, but have students mention the key points (index variable, use index to access each item, repeat length of list, etc.).</p></li>
+</ul>
+</li>
+<li><p>Review solutions to lab 4.3.</p></li>
+<li><p>Ask a student to provide their solution to each part.</p>
+<ul class="simple">
+<li><p>Discuss errors or flaws in each solution.</p></li>
+<li><p>Point out similarities between each part, emphasizing that the basic script pattern is the same each time with only the operation performed on each item changing.</p></li>
+</ul>
+</li>
+<li><p>If you feel students can handle it, you can further classify various traversals (maps, filters, folds).</p>
+<ul>
+<li><p>If necessary, provide the basic script pattern for a traversal again:</p>
+<p><img alt="simple list traversal" src="../_images/simple_list_traversal.png" /></p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="activity">
+<h3>Activity<a class="headerlink" href="#activity" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Students should complete the <a class="reference internal" href="lab_44.html"><span class="doc std std-doc">Number Cruncher</span></a> lab individually.</p></li>
+<li><p>The operations in this lab are fairly similar to those in lab 4.3, but work with lists of numbers instead of names.  As a result, students should progress more quickly.</p></li>
+<li><p>As in lab 4.3, help students realize that the basic script pattern in each part will be the same.</p></li>
+</ul>
+</div>
+<div class="section" id="debrief">
+<h3>Debrief<a class="headerlink" href="#debrief" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Ask one or two students to share their solution to each part of the lab.</p></li>
+<li><p>If all students seem to grasp the concept, not all parts need to be reviewed.</p></li>
+<li><p>If skipping some parts, be sure to review at least parts 1.1 (a fold), 2.1 (a map) and 2.2 (a filter).</p></li>
+<li><p>Point out that the solutions from labs 4.3 and 4.4 will look quite similar, even though in lab 4.3 the lists contained names in in lab 4.4 they contained numbers.</p></li>
+<li><p>The traversal script pattern is the same regardless of the type of elements in the list.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="accommodations-differentiation">
+<h2>Accommodations/Differentiation<a class="headerlink" href="#accommodations-differentiation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Advanced students should complete both bonus parts of the lab (1.5 and 2.3) and then assist struggling students.</p></li>
+<li><p>Students who need more assistance should focus on parts 1.3, 2.1, and 2.2.  Ensure that all students are able to complete at least these three parts before concluding the lesson.</p></li>
+</ul>
+</div>
+<div class="section" id="forum-discussion">
+<h2>Forum discussion<a class="headerlink" href="#forum-discussion" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forums.tealsk12.org/c/intro-unit-4-lists/lesson-4-4-list-practice-ii">Lesson 4.4: List Practice II</a> (TEALS Discourse account required).</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

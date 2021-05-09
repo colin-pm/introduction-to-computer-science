@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 4: Guess My Word &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Project 4: Guess My Word</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a><ul>
+<li><a class="reference internal" href="#behavior">Behavior</a><ul>
+<li><a class="reference internal" href="#gameplay">Gameplay</a></li>
+<li><a class="reference internal" href="#sprites">Sprites</a></li>
+<li><a class="reference internal" href="#word-status">Word Status</a></li>
+<li><a class="reference internal" href="#chances">Chances</a></li>
+<li><a class="reference internal" href="#game-end">Game End</a></li>
+<li><a class="reference internal" href="#video-example">Video Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#implementation-details">Implementation Details</a><ul>
+<li><a class="reference internal" href="#word-list-secret-word">Word List/Secret Word</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+<li><a class="reference internal" href="#required-snap-elements">Required Snap! Elements</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#required-checkpoints">Required Checkpoints</a></li>
+<li><a class="reference internal" href="#grading-scheme-rubric">Grading Scheme/Rubric</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_4/project_4.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="project-4-guess-my-word">
+<h1>Project 4: Guess My Word<a class="headerlink" href="#project-4-guess-my-word" title="Permalink to this headline">¶</a></h1>
+<p>Students will implement a Snap! “Guess my Word” word game.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>In Guess My Word, one player (the “chooser”) chooses a secret word and another player (the “guesser”) attempts to guess the word one letter at a time.  If a guessed letter appears in the word, all instances of it are revealed.  If not, the guesser loses a chance.  If the guesser figures out the secret word before he or she runs out of chances, he or she wins.  If not, the player who chose the word wins.  Chances are tracked using a figure drawing of your choice. You can build a bear or build an ice cream cone, or disassemble a snowman, be creative.  The figure is drawn one part at a time, and the guesser loses when the entire figure has been drawn or disappears. This game is also the basis for the TV game show Wheel of Fortune.</p>
+<div class="section" id="behavior">
+<h3>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="gameplay">
+<h4>Gameplay<a class="headerlink" href="#gameplay" title="Permalink to this headline">¶</a></h4>
+<p>In this implementation of Guess My Word, the computer will take on the role of the “chooser” and the human player will be the “guesser.”  The computer will secretly choose a word from a list (see below) and show the player how many letters are in the word by displaying a sequence of blanks (underscores).  Then, the computer will begin asking for guesses.  If the player guesses a letter that is in the secret word, all blanks representing an instance of that letter should be replaced by the letter.  If the guessed letter is not in the word at all, the player should lose a chance and a new part of the figure being built should appear or disappear if figure is being disassembled.  If the player guesses a letter he or she has already guessed, he or she should not lose a chance, even if that letter is not in the word.  If the player guesses all letters in the word, he or she wins.  If the figure being built is completed, the player loses.  In either case, the secret word should be revealed after the game is over.</p>
+</div>
+<div class="section" id="sprites">
+<h4>Sprites<a class="headerlink" href="#sprites" title="Permalink to this headline">¶</a></h4>
+<p>Your game will need to include at least three sprites: the figure being built or disassembled, a “host” sprite that asks the player for a guess and informs him or her whether the guess is correct, and an “assistant” sprite that tells the player the status of the secret word.  You may use more sprites if you think they are appropriate. The host and assistant should have clear roles and should never do each other’s job.</p>
+</div>
+<div class="section" id="word-status">
+<h4>Word Status<a class="headerlink" href="#word-status" title="Permalink to this headline">¶</a></h4>
+<p>As the game is played, the player should be shown the current guessed status of the secret word.  Letters that have been correctly guessed should be shown in the correct locations.  Unguessed letters will appear as blanks.  At the beginning of the game, no letters will have been guessed, and the only information shown to the player will be a sequence of blanks, with one blank for each letter in the secret word.  As the player guesses letters correctly, blanks representing guessed letters should be replaced by those letters.  So, for example, if the secret word is “screwdriver” and the player has guessed <code class="docutils literal notranslate"><span class="pre">e</span></code>, <code class="docutils literal notranslate"><span class="pre">s</span></code>, <code class="docutils literal notranslate"><span class="pre">r</span></code>, and <code class="docutils literal notranslate"><span class="pre">d</span></code>, the current word status would be: <code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">_</span> <span class="pre">r</span> <span class="pre">e</span> <span class="pre">_</span> <span class="pre">d</span> <span class="pre">r</span> <span class="pre">_</span> <span class="pre">_</span> <span class="pre">e</span> <span class="pre">r</span></code>.</p>
+</div>
+<div class="section" id="chances">
+<h4>Chances<a class="headerlink" href="#chances" title="Permalink to this headline">¶</a></h4>
+<p>The player will have six “chances” to guess the word.  Guessing a correct letter does not cost a chance.  Each missed chance will cause a new piece of the figure being built to appear or disappear if figure is being disassembled. The six pieces will depend on the  figure you choose.  Example 1, a snowman can have the following parts: head, eyes, left arm, right arm, middle snowball, and bottom snowball.  Example 2, a bear can have the following parts: head, body, left arm, right arm, left leg, and right leg.  Example 3, an ice cream cone can have the following parts: cone, 2 scoops of ice cream, fudge, sprinkles, and a cherry. If you would like to be more creative with the appearance, feel free to do so.  No matter what your figure looks like, though, it should include these six pieces and no more.</p>
+</div>
+<div class="section" id="game-end">
+<h4>Game End<a class="headerlink" href="#game-end" title="Permalink to this headline">¶</a></h4>
+<p>The game can end in one of two ways:</p>
+<ul class="simple">
+<li><p>If the player has guessed the complete secret word, he or she wins.</p></li>
+<li><p>Otherwise, if the player has run out of chances and the complete figure has been drawn, or disassembled as in the Snowman sample solution the player loses.</p></li>
+</ul>
+<p>In either case, when the game ends the host should stop asking for guesses.  The host should inform the player whether he or she won or lost, and the assistant should reveal the entire secret word.</p>
+</div>
+<div class="section" id="video-example">
+<h4>Video Example<a class="headerlink" href="#video-example" title="Permalink to this headline">¶</a></h4>
+<p>Here is a sample of a simple version of the game being played - <a class="reference external" href="https://youtu.be/H3djon837cc">https://youtu.be/H3djon837cc</a></p>
+</div>
+</div>
+<div class="section" id="implementation-details">
+<h3>Implementation Details<a class="headerlink" href="#implementation-details" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="word-list-secret-word">
+<h4>Word List/Secret Word<a class="headerlink" href="#word-list-secret-word" title="Permalink to this headline">¶</a></h4>
+<p>You will be provided with a list of words from which the secret word should be chosen for each game.  Instructions for importing the word list:</p>
+<ul>
+<li><p>To import the list, set a variable “imported words” to be a list.</p></li>
+<li><p><a class="reference internal" href="wordlist.html"><span class="doc std std-doc">Download and save</span></a> as a text file on your computer.</p></li>
+<li><p>Click the checkbox on the “imported words” variable so that it is visible on the stage.</p></li>
+<li><p>Right click on the stage image to find the ‘import…’ command. Select the correct file to import.</p></li>
+<li><p>Set another variable to be a list of words by splitting the imported words by line.</p>
+<p><img alt="Importing List Instructions" src="../_images/importing_list_instructions.png" /></p>
+</li>
+</ul>
+</div>
+<div class="section" id="documentation">
+<h4>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h4>
+<p>In addition to functioning well, your program must be well-documented and readable.  This includes, but is not limited to, things such as:</p>
+<ul class="simple">
+<li><p>organizing your scripts so that they can be read and comprehended easily</p></li>
+<li><p>giving  your sprites meaningful names</p></li>
+<li><p>naming and using your variables, lists, and custom blocks well</p></li>
+<li><p>including comments to describe the structure of your program and any particularly complex or unintuitive pieces of code</p></li>
+</ul>
+</div>
+<div class="section" id="required-snap-elements">
+<h4>Required Snap! Elements<a class="headerlink" href="#required-snap-elements" title="Permalink to this headline">¶</a></h4>
+<p>Your program must include, at a minimum, the following Snap! code elements:</p>
+<ul class="simple">
+<li><p>At least two lists, once of which must be used to track guessed letters</p></li>
+<li><p>Custom blocks as appropriate, including arguments and reporters</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="required-checkpoints">
+<h2>Required Checkpoints<a class="headerlink" href="#required-checkpoints" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Be able to select a secret word, keep track of which letters have been guessed, determine if each letter guessed is in the secret word or not</p></li>
+<li><p>Be able to  announce the current status of the word, showing letters that have been guessed and blanks for other letters.</p></li>
+<li><p>Be able to play a full game of Guess My Word, identify correct and incorrect letters, display the figure, and inform the player whether they have won or lost.</p></li>
+</ol>
+</div>
+<div class="section" id="grading-scheme-rubric">
+<h2>Grading Scheme/Rubric<a class="headerlink" href="#grading-scheme-rubric" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Functional Correctness (Behavior)</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Computer randomly chooses a secret word</p></td>
+<td><p>1 point</p></td>
+</tr>
+<tr class="row-odd"><td><p>Host repeatedly asks for a letter and announces whether that letter is in the secret word</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Assistant displays the correct secret word status after each guess</p></td>
+<td><p>4 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Player loses a chance and a piece of the figure appears when a guess is incorrect</p></td>
+<td><p>3 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Host informs player when he or she guesses a letter that has already been guessed; player does not lose a chance</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Game ends with player victory if the entire secret word is guessed</p></td>
+<td><p>2 point</p></td>
+</tr>
+<tr class="row-even"><td><p>Game ends with player defeat if the player runs out of chances</p></td>
+<td><p>2 point</p></td>
+</tr>
+<tr class="row-odd"><td><p>Secret word is revealed when game ends</p></td>
+<td><p>1 points</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>SubTotal</strong></p></td>
+<td><p><strong>17  points</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Technical Correctness (Implementation)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Program is well-designed visually and has a consistent theme</p></td>
+<td><p>2 point</p></td>
+</tr>
+<tr class="row-odd"><td><p>Program is well-documented and exhibits good style</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Program shows good creativity and effort</p></td>
+<td><p>3 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Program includes at least two lists</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Program uses custom blocks with arguments and reporters appropriately</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Program tracks guessed letters using a list</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Obtain and respond to playtest feedback from a parent or guardian</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Checkpoint 1 (4/30)</p></td>
+<td><p>4 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Checkpoint 2 (4/30)</p></td>
+<td><p>4 points</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>SubTotal</strong></p></td>
+<td><p><em>19 points</em></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Total</strong></p></td>
+<td><p><strong>40 points</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

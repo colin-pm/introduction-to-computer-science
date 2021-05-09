@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 5 - Space Invaders &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Project 5 - Space Invaders</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#behavior">Behavior</a><ul>
+<li><a class="reference internal" href="#sprite">Sprite</a></li>
+<li><a class="reference internal" href="#starting-the-game">Starting the Game</a></li>
+<li><a class="reference internal" href="#lives-and-game-over">Lives and Game Over</a></li>
+<li><a class="reference internal" href="#levels">Levels</a></li>
+<li><a class="reference internal" href="#score">Score</a></li>
+<li><a class="reference internal" href="#implementation-details">Implementation Details</a><ul>
+<li><a class="reference internal" href="#documentation-and-style">Documentation and Style</a></li>
+<li><a class="reference internal" href="#cloning">Cloning</a></li>
+<li><a class="reference internal" href="#required-snap-elements">Required Snap! Elements</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#required-checkpoints">Required Checkpoints</a></li>
+<li><a class="reference internal" href="#grading-scheme-rubric">Grading Scheme/Rubric</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_5/project_5.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="project-5-space-invaders">
+<h1>Project 5 - Space Invaders<a class="headerlink" href="#project-5-space-invaders" title="Permalink to this headline">¶</a></h1>
+<p>Students will implement a Snap! version of the classic arcade game <em>Space Invaders</em>.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Originally released in 1978, Space Invaders was one of the modern video games and is often credited with popularizing the video game industry.  In addition to being a vastly popular arcade game, the 1980 version for an early Atari system helped game consoles achieve the mainstream status they maintain today.  Because of this, the characters and gameplay style of Space Invaders are often used to represent the video game industry as a whole.  You can play an <a class="reference external" href="http://www.pacxon4u.com/space-invaders/">online version</a>.  Our game will have some differences from the classic version, but will maintain the key aspects of gameplay.</p>
+</div>
+<div class="section" id="behavior">
+<h2>Behavior<a class="headerlink" href="#behavior" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sprite">
+<h3>Sprite<a class="headerlink" href="#sprite" title="Permalink to this headline">¶</a></h3>
+<p>Your implementation of Space Invaders will include at least three main sprites: the <strong>player</strong>, <strong>invaders</strong>, and <strong>projectiles</strong>.</p>
+<ul class="simple">
+<li><p>The <strong>player</strong> moves along the bottom of the stage attempting to destroy invaders by firing projectiles.  The player can move left and right only (controlled by the arrow keys), not up and down.  The player fires when the space bar is pressed.  The player begins with three lives and loses a life each time an invader touches him or reaches the bottom of the stage.</p></li>
+<li><p><strong>Invaders</strong> begin at the top of the stage and slowly move towards the bottom in a grid  formation.  Invaders move from side to side across the stage, bouncing off the left and right edges.  Each time an invader bounces off an edge, it should move down by the height of one invader.  When an invader is hit by a projectile, it is destroyed, and should disappear from the stage.</p></li>
+<li><p><strong>Projectiles</strong> are fired by both the player and the invaders.  The player fires a projectile when the user presses the space bar, while the invaders fire randomly.  A projectile should originate at the position of the sprite that fired it and move quickly up or down the stage until hitting either an invader, the player, or the edge of the stage.  If the projectile hits an invader or player, that invader or the player should be destroyed.  Upon hitting either an edge of the stage or another sprite, the projectile should then disappear.  Only one invader may fire a projectile at time, and another invader may not fire until the projectile has disappeared.  The player has an unlimited supply of projectiles, but may only shoot <em>three</em> at a time.</p></li>
+</ul>
+</div>
+<div class="section" id="starting-the-game">
+<h3>Starting the Game<a class="headerlink" href="#starting-the-game" title="Permalink to this headline">¶</a></h3>
+<p>When the green flag is clicked, the game should initialize and a welcome screen should be displayed to the user (think of this as inserting a coin into an arcade machine).  The welcome screen should include a “Start Game” button that, when clicked, begins the actual game.  The welcome screen should also display some basic information about the game.</p>
+</div>
+<div class="section" id="lives-and-game-over">
+<h3>Lives and Game Over<a class="headerlink" href="#lives-and-game-over" title="Permalink to this headline">¶</a></h3>
+<p>The player begins the game with three lives, and loses a life each time an invader either touches the player or reaches the bottom of the stage.  When the player loses a life, the game should halt momentarily.  All invaders and projectiles should disappear, and there should be a visual indication that the player has lost a life (message, change in costume, etc.).  After a brief delay, the game should restart with all invaders at the top of the stage and the player having one fewer life.  When the player loses its final life, the game ends and a “Game Over” message should be displayed.  A “New Game” button should then be displayed that, when click, restarts the game from the beginning.</p>
+</div>
+<div class="section" id="levels">
+<h3>Levels<a class="headerlink" href="#levels" title="Permalink to this headline">¶</a></h3>
+<p>Each time the player manages to destroy all the invaders on the screen, he or she completes a level.  When a level is completed, a “Level Cleared” message should be displayed.  Then, after a brief delay, the next level should begin.  Each successive level should be made more difficult by increasing the speed at which the invaders advance down the stage and the frequency at which they fire projectiles.</p>
+</div>
+<div class="section" id="score">
+<h3>Score<a class="headerlink" href="#score" title="Permalink to this headline">¶</a></h3>
+<p>Each time the player destroys an invader, points should be earned.  Scoring should start at 100 points per invader in the first level, and increase by 50 points per invader in each successive level.  So, for example, each invader in level 2 is worth 150 points, each in level 3 is worth 200 points, at so on.  The player’s score should be displayed on the stage throughout the game and be featured on the “Game Over” screen.</p>
+</div>
+<div class="section" id="implementation-details">
+<h3>Implementation Details<a class="headerlink" href="#implementation-details" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="documentation-and-style">
+<h4>Documentation and Style<a class="headerlink" href="#documentation-and-style" title="Permalink to this headline">¶</a></h4>
+<p>As with all previous projects, your program must be well-written, well-documented, and readable.  This includes, but is not limited to:</p>
+<ul class="simple">
+<li><p>organizing your scripts so that they can be read and comprehended easily</p></li>
+<li><p>giving your sprites meaningful names</p></li>
+<li><p>naming and using your variables, lists, and custom blocks well</p></li>
+<li><p>including comments to describe the structure of your program and any particularly complex or unintuitive pieces of code</p></li>
+<li><p>separating master sprites from clones, and cleaning up clones that are finished (see below)</p></li>
+</ul>
+</div>
+<div class="section" id="cloning">
+<h4>Cloning<a class="headerlink" href="#cloning" title="Permalink to this headline">¶</a></h4>
+<p>The invaders and the projectiles should be implemented using prototyping.  A single master sprite should be implemented for each type and clones should be created each time a new instance of the sprite is needed.  The master sprites should be hidden throughout the program and should not take part in gameplay.</p>
+</div>
+<div class="section" id="required-snap-elements">
+<h4>Required Snap! Elements<a class="headerlink" href="#required-snap-elements" title="Permalink to this headline">¶</a></h4>
+<p>Your program must include the following Snap! elements:
+* At least three variables
+* At least two custom blocks, at least one of which must take an argument</p>
+</div>
+</div>
+</div>
+<div class="section" id="required-checkpoints">
+<h2>Required Checkpoints<a class="headerlink" href="#required-checkpoints" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Have the player and a single invader moving correctly</p></li>
+<li><p>Be able to clone invaders and have the entire group move correctly</p></li>
+<li><p>Be able to fire projectiles from both the player (when the space bar is pressed) and the invaders (randomly)</p></li>
+</ol>
+</div>
+<div class="section" id="grading-scheme-rubric">
+<h2>Grading Scheme/Rubric<a class="headerlink" href="#grading-scheme-rubric" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Functional Correctness (Behavior)</p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Welcome screen containing game info displayed green flag clicked</p></td>
+<td><p>1 point</p></td>
+</tr>
+<tr class="row-odd"><td><p>Start button displayed and game starts when clicked</p></td>
+<td><p>1 point</p></td>
+</tr>
+<tr class="row-even"><td><p>Keyboard control of player (including shooting)</p></td>
+<td><p>1 point</p></td>
+</tr>
+<tr class="row-odd"><td><p>Multiple invaders</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Invaders attack in formation</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Invaders die when hit by projectile</p></td>
+<td><p>1 point</p></td>
+</tr>
+<tr class="row-even"><td><p>Player earns points when an invader is killed</p></td>
+<td><p>1 point</p></td>
+</tr>
+<tr class="row-odd"><td><p>Player fires projectiles correctly</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Invaders fire projectiles correctly</p></td>
+<td><p>3 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Player loses life and level resets when player or bottom of stage touched by invader</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Game ends and new game screen appears when player is out of lives</p></td>
+<td><p>1 point</p></td>
+</tr>
+<tr class="row-odd"><td><p>Level changes when all invaders are destroyed</p></td>
+<td><p>1 point</p></td>
+</tr>
+<tr class="row-even"><td><p>Invaders speed up in each level</p></td>
+<td><p>1 point</p></td>
+</tr>
+<tr class="row-odd"><td><p>Point values increase each level</p></td>
+<td><p>1 point</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>SubTotal</strong></p></td>
+<td><p><em>20 points</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Technical Correctness (Implementation)</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Program is well-documented and shows good style</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Program shows creativity and effort</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Invaders and projectiles are implemented using cloning</p></td>
+<td><p>3 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Program operates correctly under all normal conditions (aka “No bugs”)</p></td>
+<td><p>3 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Program uses at least three variables</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Program includes two custom blocks, one of which accepts arguments</p></td>
+<td><p>3 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Checkpoint 1</p></td>
+<td><p>5 points</p></td>
+</tr>
+<tr class="row-odd"><td><p>Checkpoint 2</p></td>
+<td><p>5 points</p></td>
+</tr>
+<tr class="row-even"><td><p>Checkpoint 3</p></td>
+<td><p>5 points</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>SubTotal</strong></p></td>
+<td><p><strong>30 points</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Total</strong></p></td>
+<td><p><strong>50 points</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

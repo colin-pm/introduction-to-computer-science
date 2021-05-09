@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 0.2: Algorithms &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lesson 0.2: Algorithms</a><ul>
+<li><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
+<li><a class="reference internal" href="#materials-preparation">Materials/Preparation</a></li>
+<li><a class="reference internal" href="#pacing-guide">Pacing Guide</a></li>
+<li><a class="reference internal" href="#instructor-s-notes">Instructor’s Notes</a><ul>
+<li><a class="reference internal" href="#introductory-discussion">1. Introductory discussion</a><ul>
+<li><a class="reference internal" href="#remote-instruction-guidance"><em>Remote Instruction Guidance</em></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#activity">2. Activity</a></li>
+<li><a class="reference internal" href="#debrief">3.  Debrief</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bjc-lecture-suggestions">BJC Lecture Suggestions</a></li>
+<li><a class="reference internal" href="#background-information-for-instructors">Background Information for Instructors</a><ul>
+<li><a class="reference internal" href="#good-for-classroom-instruction-7-41-8-25"><strong>Good for Classroom Instruction 7:41-8:25</strong></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#accommodations-differentiation">Accommodations/Differentiation</a></li>
+<li><a class="reference internal" href="#forum-discussion">Forum discussion</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_0/lesson_02.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lesson-0-2-algorithms">
+<h1>Lesson 0.2: Algorithms<a class="headerlink" href="#lesson-0-2-algorithms" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>Students will be able to…</p>
+<ul class="simple">
+<li><p>Define <strong>algorithm</strong>.</p></li>
+<li><p>Construct algorithms for performing simple tasks.</p></li>
+</ul>
+</div>
+<div class="section" id="materials-preparation">
+<h2>Materials/Preparation<a class="headerlink" href="#materials-preparation" title="Permalink to this headline">¶</a></h2>
+<p>Needed for this lesson:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/slidedecks/TEALS%20SNAP%200.2.pptx">0.2 Slide Deck</a></p></li>
+<li><p>If you choose to do the peanut butter &amp; jelly sandwich activity, you will need ingredients, utensils, plates, napkins, etc.</p></li>
+<li><p>Paper/writing implements for each group of students.</p></li>
+<li><p>Large poster paper and markers will allow for display of the algorithms, but standard paper will work fine.</p></li>
+<li><p><a class="reference external" href="http://www.nsrfharmony.org/system/files/protocols/chalk_talk_0.pdf">“Chalk Talk”</a></p></li>
+<li><p><a class="reference external" href="http://www.theworldcafe.com/key-concepts-resources/world-cafe-method/">“World Café”</a></p></li>
+<li><p>Remote Whiteboard Tools</p>
+<ul>
+<li><p><a class="reference external" href="https://www.microsoft.com/en-us/p/microsoft-whiteboard/9mspc6mp8fm4?activetab=pivot:overviewtab">Microsoft Whiteboard</a> (Available for PC or Mac)</p></li>
+<li><p><a class="reference external" href="https://edu.google.com/products/jamboard/?modal_active=none">Google Jamboard</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://airandspace.si.edu/stories/editorial/hidden-figures-and-human-computers">Hidden Figures and Human Computers</a>)</p></li>
+<li><p><a class="reference internal" href="unit_0_tips.html"><span class="doc std std-doc">Unit 0 Tips</span></a></p></li>
+<li><p>Video Resource - <a class="reference external" href="https://youtu.be/ZnBF2GeAKbo">https://youtu.be/ZnBF2GeAKbo</a></p>
+<ul>
+<li><p>Video Quiz - See Additional Curriculum Materials accessed from the TEALS Dashboard.</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://youtu.be/LMRSr_y9jPU">CodeScty Algorithm Music Video</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/LfhZzHrWDQM">CodeScty Algorithm Dance Challenge</a></p></li>
+</ul>
+</div>
+<div class="section" id="pacing-guide">
+<h2>Pacing Guide<a class="headerlink" href="#pacing-guide" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Duration</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5 minutes</p></td>
+<td><p>Welcome, attendance, bell work, announcements</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 minutes</p></td>
+<td><p>Introductory discussion; present activity</p></td>
+</tr>
+<tr class="row-even"><td><p>10 minutes</p></td>
+<td><p>Students write first algorithms</p></td>
+</tr>
+<tr class="row-odd"><td><p>5 minutes</p></td>
+<td><p>Sample algorithm execution</p></td>
+</tr>
+<tr class="row-even"><td><p>10 minutes</p></td>
+<td><p>Students debug/rewrite algorithms</p></td>
+</tr>
+<tr class="row-odd"><td><p>5 minutes</p></td>
+<td><p>Second sample algorithm execution</p></td>
+</tr>
+<tr class="row-even"><td><p>10 minutes</p></td>
+<td><p>Debrief and wrap-up</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="instructor-s-notes">
+<h2>Instructor’s Notes<a class="headerlink" href="#instructor-s-notes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="introductory-discussion">
+<h3>1. Introductory discussion<a class="headerlink" href="#introductory-discussion" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Invite discussion about what constitutes a computer, what computers do, and what computer science is.</p></li>
+<li><p>An excellent protocol for these types of discussions is <a class="reference external" href="http://www.nsrfharmony.org/system/files/protocols/chalk_talk_0.pdf">“Chalk Talk”</a> or <a class="reference external" href="http://www.theworldcafe.com/key-concepts-resources/world-cafe-method/">“World Café”</a>.</p></li>
+<li><p><em>Remote Guidance</em>: Chalk talks could be accomplished remotely using a digital whiteboard tool such as:</p>
+<ul>
+<li><p><a class="reference external" href="https://www.microsoft.com/en-us/p/microsoft-whiteboard/9mspc6mp8fm4?activetab=pivot:overviewtab">Microsoft Whiteboard</a> (Available for PC or Mac)</p></li>
+<li><p><a class="reference external" href="https://edu.google.com/products/jamboard/?modal_active=none">Google Jamboard</a></p></li>
+<li><p>Whiteboard tool in Newrow</p></li>
+</ul>
+</li>
+<li><p><em>Remote Guidance</em>: World Café could be accomplished using breakout rooms built into your class meeting tool. If the breakout room feature isn’t available this could be accomplished using multiple live rooms and assigning students into groups.</p></li>
+<li><p>Develop definitions for important terms (“computer,” “computer science,” “algorithm,” “program,”  “programming language”).</p></li>
+<li><p>Display each term on the board or projector and ask students to provide key ideas or concepts they know that relate to the term. From this, you can develop a classroom definition. Feel free to have a pre-written definition and guide students to that definition using leading questions.</p></li>
+<li><p>You can introduce the idea that the first computers were human (a person who makes calculations, especially with a calculating machine) with the story about Katherine Johnson whose calculations were used for manned and unmanned orbital missions (read more <a class="reference external" href="https://airandspace.si.edu/stories/editorial/hidden-figures-and-human-computers">here</a>).</p></li>
+</ul>
+<div class="section" id="remote-instruction-guidance">
+<h4><em>Remote Instruction Guidance</em><a class="headerlink" href="#remote-instruction-guidance" title="Permalink to this headline">¶</a></h4>
+<p>Here is a great video to introduce Algorithms: <a class="reference external" href="https://youtu.be/ZnBF2GeAKbo">https://youtu.be/ZnBF2GeAKbo</a></p>
+</div>
+</div>
+<div class="section" id="activity">
+<h3>2. Activity<a class="headerlink" href="#activity" title="Permalink to this headline">¶</a></h3>
+<ol>
+<li><p>Write algorithms</p>
+<ul class="simple">
+<li><p>In pairs or small groups, students will attempt to develop an algorithm to teach a robot to <a class="reference external" href="https://bam.files.bbci.co.uk/bam/live/content/z9bmxnb/transcript">brush their teeth</a>, or to prepare a peanut butter and jelly sandwich (check for food allergies before performing this exercise). Specify to students that their algorithm must be complete and detailed enough for a “computer” (the teacher) to unambiguously follow the steps and achieve the desired result.</p></li>
+<li><p>Give little guidance at this stage, as the confusion (and the errors that are likely to result) will both reinforce the importance of specificity and detail as well as provide entertainment value later on.</p></li>
+<li><p>Algorithms should be written on paper to be shared and reviewed.  Students should <em>not</em> be writing any code, nor should they develop algorithms “in their heads.”</p></li>
+<li><p><em>Remote Learning Guidance</em> - This activity could be done using a shared document and then links could be shared. Consider pairing students in advance or building in a procedure on how students will pair up moving forward in the semester.</p></li>
+</ul>
+</li>
+<li><p>Algorithm execution</p>
+<ul>
+<li><p>After groups have finished, choose a group and have them read their instructions.  Act as a computer and follow each step as literally as possible. If there is ambiguity, or if a step is not possible to complete, point out the error.</p></li>
+<li><p>When an instruction is ambiguous or impossible, interpret the algorithm in the most atypical (and hilarious) way possible.  This will reinforce to students that many seemingly clear instructions can be taken many ways.</p></li>
+<li><p>For the PBJ activity, common errors will include:</p>
+<ul class="simple">
+<li><p>Failing to open a container before using what is inside</p></li>
+<li><p><strong>Response:</strong> Try (and fail) to access the inside in a humorous fashion (e.g. try to reach through the bag or jar, acting confused as to why you cannot reach the ingredient inside).</p></li>
+<li><p>Failing to specify in which orientation or position to use something (e.g. “grab the knife” but not by the handle, “put down the bread” but not on the plate).</p></li>
+<li><p><strong>Response:</strong> use or place the ingredient in an obviously (and humorously) incorrect way (e.g. grab the knife (carefully) by the sharp end, put the slice of bread on the table next to plate, spread peanut butter around the crust instead of on the face).</p></li>
+<li><p>Using instructions that are too broad (e.g. “pick up the bread” to mean a single slice, “put the peanut butter on the bread” to mean spreading a small amount).</p></li>
+<li><p><strong>Response:</strong> Ask for more detail, or interpret the instruction literally.</p></li>
+<li><p>Combining multiple steps into one instruction (e.g. “spread peanut butter on the bread” without specifically opening the jar, putting peanut butter on the knife, using the knife to spread, etc.)</p></li>
+<li><p><strong>Response:</strong> Ask for more detail.</p></li>
+</ul>
+</li>
+<li><p>Most algorithms will fail.  If there is time, repeat the process with one or two other groups.</p></li>
+<li><p>Here is an example video of the PBJ activity:</p>
+<p><iframe class="markdeep" width="400" height="315" src="https://www.youtube.com/embed/FN2RM-CHkuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</li>
+</ul>
+</li>
+<li><p>Debugging algorithms</p>
+<ul class="simple">
+<li><p>Spend a brief moment explaining that programming is an iterative process, and that errors are expected.  Introduce the concept of “debugging.”  Then, have students “debug” their algorithms and attempt to fix all errors and ambiguities.</p></li>
+<li><p>Changes should be made on paper.  Consider introducing a standard notation for edits (strike-through for deletion, carat (^) for insertion, circle for modify, etc.) to make changes easy to spot.</p></li>
+<li><p>If possible, have students make changes using a different color marker or pen.</p></li>
+<li><p>While students are working, circulate and look for a promising algorithm.  The goal is to have a successful algorithm at the end of the class.</p></li>
+</ul>
+</li>
+<li><p>Execute debugged algorithm</p>
+<ul class="simple">
+<li><p>Once groups have finished debugging, repeat the execution process.  Hopefully, at this point, at least one algorithm will result in a proper sandwich.</p></li>
+<li><p>If no successful algorithm is found, try to debug on the fly. When you hear an incorrect or unclear instruction, point out the error and either propose or request a fix before proceeding.  The goal is to create a sandwich before the end of class.</p></li>
+<li><p>Many algorithms will still have similar problems to the first iteration.  Others will have too much detail (see below) or other, subtler problems (such as skipping trivial steps like putting the two slices of bread together). Try to take note of issues while circulating so you can address them quickly.</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="debrief">
+<h3>3.  Debrief<a class="headerlink" href="#debrief" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Ask students to describe why there were problems with the first round of algorithms, and how those problems were fixed. Encourage the use of computer science terminology.</p></li>
+<li><p>Keep students from fixating on the specifics of any one error and guide discussion to the general approaches and concepts used to resolve problems.</p></li>
+<li><p>Have students discuss what lessons can be learned from this activity and how they can be applied to programming and computer science.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="bjc-lecture-suggestions">
+<h2>BJC Lecture Suggestions<a class="headerlink" href="#bjc-lecture-suggestions" title="Permalink to this headline">¶</a></h2>
+<p>BJC Video Suggestion: <a class="reference external" href="https://www.youtube.com/watch?v=3tvbqdLjjSU">BJC Lecture 6: Algorithm</a> (With Luke Segar</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3tvbqdLjjSU&amp;t=3m20s">Algorithm Definition</a> 3:20-4:20</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3tvbqdLjjSU&amp;t=4m25s">Early Algorithms</a> 4:25-5:55</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3tvbqdLjjSU&amp;t=6m00s">Familiar Algorithms</a> 6:00-7:30</p></li>
+</ul>
+<p>BJC Video Suggestion: <a class="reference external" href="https://www.youtube.com/watch?v=_fgtTE2bhMg">BJC Lecture 7: Algorithm Complexity</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=_fgtTE2bhMg&amp;t=6m0s">Algorithm Analysis</a>: The Basics 6:00-7:40</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=_fgtTE2bhMg&amp;t=7m41s">Algorithm Analysis:</a> Running Time 7:41-8:25</p></li>
+</ul>
+</div>
+<div class="section" id="background-information-for-instructors">
+<h2>Background Information for Instructors<a class="headerlink" href="#background-information-for-instructors" title="Permalink to this headline">¶</a></h2>
+<p>BJC Video Suggestion: <a class="reference external" href="https://www.youtube.com/watch?v=3tvbqdLjjSU">BJC Lecture 6: Algorithm</a> (With Luke Segar</p>
+<ul class="simple">
+<li><p>Computer Worms 0:00-1:30</p></li>
+<li><p>Algorithm Concept Intro: Rubic Cube Competition 1:40-2:40</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3tvbqdLjjSU&amp;t=3m20s">Algorithm Definition</a> 3:20-4:20</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3tvbqdLjjSU&amp;t=4m25s">Early Algorithms</a> 4:25-5:55</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3tvbqdLjjSU&amp;t=6m00s">Familiar Algorithms</a> 6:00-7:30</p></li>
+<li><p>Commonly Used Algorithms (Page Rank, etc.) 8:00-10:45</p></li>
+<li><p>Choosing an Algorithm Technique 10:50-12:15</p></li>
+<li><p>Ways to Tackle Problems (Brute Force, Top Down, Bottom Up) 12:20-15:30</p></li>
+<li><p>Algorithms vs Functions and Procedures 15:30-16:00</p></li>
+<li><p>Turing Completeness (Computer Theory-BYOB is Turing Complete) 16:05-21:15</p></li>
+<li><p>Algorithm Correctness 21:25-26:00</p></li>
+<li><p>Algorithm Summary 26:00-end</p></li>
+</ul>
+<p>BJC Video Suggestion: <a class="reference external" href="https://www.youtube.com/watch?v=_fgtTE2bhMg">BJC Lecture 7: Algorithm Complexity</a></p>
+<ul class="simple">
+<li><p>Yahoo predicts America’s Political Winner 0:00-1:25</p></li>
+<li><p>Function Abstraction (Explanation of Functions and Algorithms) 1:28-2:45</p></li>
+<li><p>What is IN a Spec 2:45-3:30</p></li>
+<li><p>What is NOT in a Spec 3:30-5:15</p></li>
+<li><p>Reference Text “Introduction to Algorithms” 5:18</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=_fgtTE2bhMg&amp;t=6m0s">Algorithm Analysis</a>: The Basics** Good for Classroom Instruction 6:00-7:40***</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=_fgtTE2bhMg&amp;t=7m41s">Algorithm Analysis:</a> Running Time</p></li>
+</ul>
+<div class="section" id="good-for-classroom-instruction-7-41-8-25">
+<h3><strong>Good for Classroom Instruction 7:41-8:25</strong><a class="headerlink" href="#good-for-classroom-instruction-7-41-8-25" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Algorithm Analysis: Runtime Analysis Problem and Solution 8:25-9:55</p></li>
+<li><p>Runtime Analysis: Input Size and Efficiency 9:58-11:25</p></li>
+<li><p>Runtime Analysis: Worst of Avg Case 11:25-13:20</p></li>
+<li><p>Run Time: Final Assessment 13:20-16:46</p></li>
+<li><p>Example:Finding a student by ID (detailed explanation of input/output)
+17:00-31:20</p></li>
+<li><p>Ex: Finding a shared birthday (Constant, Logarithmic, Linear, Quadratic, Exponential) 31:21-33:30</p></li>
+<li><p>Ex: Finding Subsets 33:40 to End</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="accommodations-differentiation">
+<h2>Accommodations/Differentiation<a class="headerlink" href="#accommodations-differentiation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Check for food allergies before performing this exercise.  If any student has allergies that would put them at risk, substitute another food item or simulate the process with stand-in ingredients.</p></li>
+<li><p>The most common allergy will be to peanuts. Possible alternatives in this case include cream cheese &amp; jelly, toast with butter and jam, or even a deli sandwich (turkey/ham/roast beef) with mayo and/or mustard.</p></li>
+<li><p>For other allergies, or if no options are acceptable, simulate using fake ingredients.  (Even slips of paper with the ingredients written on them can suffice.)</p></li>
+<li><p>Students who have previous programming experience may tend to dominate the algorithm generation process.  Encourage these students to avoid pointing out errors directly and help the other members of their group find and fix errors.</p></li>
+<li><p>If students are struggling with the level of specificity required, allow them to make some basic assumptions to ease the process.</p></li>
+<li><p>This can lead to an excellent conversation about abstraction.</p></li>
+<li><p>In the “debugging” round, some students may go overboard with the level of detail in an attempt to resolve all possible ambiguities.  Remind these students that there are some basic instructions that can be easily understood by most people, and there is no need to go into further detail in those cases.</p></li>
+<li><p>If you feel students can handle the discussion, you can draw a parallel to machine code here.</p></li>
+</ul>
+</div>
+<div class="section" id="forum-discussion">
+<h2>Forum discussion<a class="headerlink" href="#forum-discussion" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forums.tealsk12.org/c/unit-0-beginnings/lesson-0-2-algorithms">Lesson 0.2 Algorithms</a> (TEALS Discourse account required).</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

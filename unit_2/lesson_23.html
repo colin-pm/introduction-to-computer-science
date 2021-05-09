@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 2.3: Inputs and Conditionals &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lesson 2.3: Inputs and Conditionals</a><ul>
+<li><a class="reference internal" href="#student-objectives">Student Objectives</a></li>
+<li><a class="reference internal" href="#materials-preparation">Materials/Preparation</a></li>
+<li><a class="reference internal" href="#pacing-guide">Pacing Guide</a></li>
+<li><a class="reference internal" href="#instructor-s-notes">Instructor’s Notes</a><ul>
+<li><a class="reference internal" href="#lecture">Lecture</a><ul>
+<li><a class="reference internal" href="#introduce-conditional-statements">Introduce conditional statements</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#activity">Activity</a></li>
+<li><a class="reference internal" href="#debrief">Debrief</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bjc-lecture-suggestions">BJC Lecture Suggestions</a><ul>
+<li><a class="reference internal" href="#good-for-classroom-instruction">Good for Classroom Instruction</a><ul>
+<li><a class="reference internal" href="#background-information-for-instructors">Background Information for Instructors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#accommodation-differentiation">Accommodation/Differentiation</a></li>
+<li><a class="reference internal" href="#forum-discussion">Forum discussion</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_2/lesson_23.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lesson-2-3-inputs-and-conditionals">
+<h1>Lesson 2.3: Inputs and Conditionals<a class="headerlink" href="#lesson-2-3-inputs-and-conditionals" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="student-objectives">
+<h2>Student Objectives<a class="headerlink" href="#student-objectives" title="Permalink to this headline">¶</a></h2>
+<p>Students will be able to…</p>
+<ul class="simple">
+<li><p>Apply <code class="docutils literal notranslate"><span class="pre">Ask</span></code> and <code class="docutils literal notranslate"><span class="pre">Receive</span></code> in Snap!.</p></li>
+<li><p>Apply simple conditional, <code class="docutils literal notranslate"><span class="pre">if</span></code> and <code class="docutils literal notranslate"><span class="pre">if-else</span></code> blocks, to alter control flow in a Snap! program.</p></li>
+</ul>
+</div>
+<div class="section" id="materials-preparation">
+<h2>Materials/Preparation<a class="headerlink" href="#materials-preparation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="do_now_23.html"><span class="doc std std-doc">Do Now 2.3: Stairs</span></a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/slidedecks/TEALS%20SNAP%202.3.pptx">2.3 Slide Deck</a></p></li>
+<li><p><a class="reference internal" href="lab_23.html"><span class="doc std std-doc">Lab 2.3 Handout What Shape is That?</span></a> (<a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/Unit%202%20Word/Lab%202.3%20What%20Shape%20Is%20That.docx">docx</a>) (<a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/raw/master/Unit%202%20PDF/Lab%202.3%20What%20Shape%20Is%20That.pdf">pdf</a>).</p></li>
+<li><p><a class="reference external" href="https://www.tealsk12.org/intro-to-computer-science-sample-solutions/">Lab 2.3 Solution</a></p></li>
+<li><p><a class="reference internal" href="unit_2_tips.html"><span class="doc std std-doc">Unit 2 Tips</span></a>.</p></li>
+<li><p><a class="reference external" href="https://www.flocabulary.com/unit/coding-conditionals/">Video on Conditionals</a></p></li>
+<li><p>Video Resource: <a class="reference external" href="https://youtu.be/t3k3wOxO1xI">https://youtu.be/t3k3wOxO1xI</a></p>
+<ul>
+<li><p>Video Quiz: See Additional Curriculum Materials accessed from the TEALS Dashboard.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="pacing-guide">
+<h2>Pacing Guide<a class="headerlink" href="#pacing-guide" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Duration</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5 minutes</p></td>
+<td><p>Welcome, attendance, bell work, announcements</p></td>
+</tr>
+<tr class="row-odd"><td><p>20 minutes</p></td>
+<td><p>Lecture</p></td>
+</tr>
+<tr class="row-even"><td><p>20 minutes</p></td>
+<td><p>What Shape is That? Activity</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 minutes</p></td>
+<td><p>Debrief and wrap-up</p></td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: This lesson may cover too much material for some classes to handle in one day.  Feel free to spill over into a second day, splitting the material however works best for your class.</em></p>
+</div>
+<div class="section" id="instructor-s-notes">
+<h2>Instructor’s Notes<a class="headerlink" href="#instructor-s-notes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lecture">
+<h3>Lecture<a class="headerlink" href="#lecture" title="Permalink to this headline">¶</a></h3>
+<p>Point out that, so far, our programs have had minimal interactivity</p>
+<ul>
+<li><p>There was <em>some</em> user interaction in the shape drawing labs, but no back and forth– just pushing a key to trigger an action.</p>
+<ul class="simple">
+<li><p>This is not normally how computer programs work.</p></li>
+</ul>
+</li>
+<li><p>Ask students for examples of interactive computer programs.</p></li>
+<li><p>Ask students for suggestions for making previous labs or activities more interactive.</p>
+<ul class="simple">
+<li><p>There are no right or wrong answers here The goal is to get students thinking about interactivity.</p></li>
+</ul>
+</li>
+<li><p>Introduce the <code class="docutils literal notranslate"><span class="pre">ask</span> <span class="pre">_</span> <span class="pre">and</span> <span class="pre">wait</span></code> block.</p>
+<p><img alt="Ask Block" src="../_images/ask.png" /></p>
+</li>
+<li><p>Demonstrate that it functions similar to the <code class="docutils literal notranslate"><span class="pre">say</span></code> block but waits for a response from the user.</p>
+<p><img alt="Say Block" src="../_images/say.png" /></p>
+</li>
+<li><p>The response is stored in the <code class="docutils literal notranslate"><span class="pre">answer</span></code> block and can be referenced later.</p>
+<p><img alt="Answer Block" src="../_images/answer.png" /></p>
+</li>
+<li><p>Variables will not be introduced until unit 3, so this block will be somewhat magical for now.  You should judge your students’ preparedness to handle the details and act accordingly.</p></li>
+<li><p>Emphasize that only one input is stored at a time, and that asking a new question deletes the previous answer.</p></li>
+<li><p>For example, the following script, intended to draw a bunch of squares where the user specifies both the size and the number of squares, will not work as intended:</p>
+<p><img alt="Draw Squares Example Code" src="../_images/draw_squares.png" /></p>
+</li>
+</ul>
+<div class="section" id="introduce-conditional-statements">
+<h4>Introduce conditional statements<a class="headerlink" href="#introduce-conditional-statements" title="Permalink to this headline">¶</a></h4>
+<p>Define <strong>conditional</strong> - a block used to make a choice between executing two different chunks of code.</p>
+<ul>
+<li><p>You can also use this <a class="reference external" href="https://www.flocabulary.com/unit/coding-conditionals/">video on conditionals</a> by Flocabulary.</p></li>
+<li><p>Point out the differences between <code class="docutils literal notranslate"><span class="pre">if</span></code> and <code class="docutils literal notranslate"><span class="pre">if/else</span></code> block.</p>
+<p><img alt="If Block" src="../_images/if.png" /></p>
+<p><img alt="If Else Block" src="../_images/if_else.png" /></p>
+</li>
+<li><p>Namely, if-else provides a choice between two code paths, whereas if simply chooses between executing code or not</p></li>
+<li><p>Emphasize that <strong>only one</strong> of the bodies, either the if or the else, will ever be executed.</p></li>
+<li><p>Show students the relational operators (&lt;, &gt;, and =).</p></li>
+<li><p>These should be fairly intuitive to most students.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="activity">
+<h3>Activity<a class="headerlink" href="#activity" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Direct students to complete the <a class="reference internal" href="lab_23.html"><span class="doc std std-doc">What Shape is That?</span></a> activity individually or in pairs.</p></li>
+<li><p>Help students realize that, although they may seem quite different, parts 2.1 and 2.2 require very similar code.</p></li>
+</ul>
+</div>
+<div class="section" id="debrief">
+<h3>Debrief<a class="headerlink" href="#debrief" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Discuss one or two students solutions.</p></li>
+<li><p>Point out differences between the approaches of different students and lead discussion about advantages and disadvantages.</p></li>
+<li><p>Place particular emphasis on the choice between if and if-else blocks.</p></li>
+<li><p>Explain that, when conditions are mutually exclusive (as in part 2.1), a series of if vs. if-else blocks can be functionally equivalent.</p></li>
+<li><p>When the conditions are not mutually exclusive (as in part 2.2), the choice matters more.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="bjc-lecture-suggestions">
+<h2>BJC Lecture Suggestions<a class="headerlink" href="#bjc-lecture-suggestions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="good-for-classroom-instruction">
+<h3>Good for Classroom Instruction<a class="headerlink" href="#good-for-classroom-instruction" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=3VZ7D01T2Yc">BJC Lecture 13: Mislabeled as 14) Human-Computer Interaction Bjorn Hartman</a></p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3VZ7D01T2Yc&amp;t=15m0s">Why Study User Interfaces</a>
+Ex:Mouse Xy axis, Sketchpad, PC, Tablets 15:00-25:00</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3VZ7D01T2Yc&amp;t=28m30s">Example Project: Using Dexterity for Computer Interface Video</a> 28:30-29:30</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3VZ7D01T2Yc&amp;t=32m0s">Multi Touch Apps and Toolkits</a> 32:00-End</p></li>
+</ul>
+<div class="section" id="background-information-for-instructors">
+<h4>Background Information for Instructors<a class="headerlink" href="#background-information-for-instructors" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=3VZ7D01T2Yc">BJC Lecture 13: Mislabeled as 14) Human-Computer Interaction Bjorn Hartman</a></p>
+<ul class="simple">
+<li><p>Bjorn Hartman Background 0:00-3:30</p></li>
+<li><p>Human Computer Interface(HCI) 3:45-6:00</p></li>
+<li><p>HCI: Design, Computer Science, Applied Psychology 6:00-8:00</p></li>
+<li><p>Iterative Design Cycle 8:00-10:30</p></li>
+<li><p>Understanding Users 10:35-11:35</p></li>
+<li><p>Prototype Interface Examples 11:40-14:00</p></li>
+<li><p>Evaluation (Formative, Summative) 14:50</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3VZ7D01T2Yc&amp;t=15m0s">Why Study User Interfaces</a>
+Ex:Mouse Xy axis, Sketchpad, PC, Tablets 15:00-25:00</p></li>
+<li><p>What had changed? Research: Mainframe to Ubiquitous Computing 25:00-29:30</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3VZ7D01T2Yc&amp;t=28m30s">Example Project: Using Dexterity for Computer Interface Video</a> 28:30-29:30</p></li>
+<li><p>Zipf/Power Law Distribution 30:00-32:00</p></li>
+<li><p>HCI Research at Berkeley 32:10-46:25</p></li>
+<li><p><a class="reference external" href="http://www.youtube.com/watch?v=3VZ7D01T2Yc&amp;t=32m0s">Multi Touch Apps and Toolkits</a> 32:00-End</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="accommodation-differentiation">
+<h2>Accommodation/Differentiation<a class="headerlink" href="#accommodation-differentiation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Advanced students can be encouraged to add extra functionality, such as attempting to draw the shape the user is specifying or identifying types of triangles (equilateral, isosceles, scalene)</p></li>
+<li><p>Students who are struggling can be allowed to skip some parts of the tables in 2.1 and 2.2, focusing on just a few cases</p></li>
+</ul>
+</div>
+<div class="section" id="forum-discussion">
+<h2>Forum discussion<a class="headerlink" href="#forum-discussion" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forums.tealsk12.org/c/intro-unit-2-loops/lesson-2-3-inputs-and-conditionals">Lesson 2.3 Inputs and Conditionals</a> (TEALS Discourse account required).</a></p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

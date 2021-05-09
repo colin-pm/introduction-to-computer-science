@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 3: Platform Game &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Project 3: Platform Game</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#details">Details</a><ul>
+<li><a class="reference internal" href="#controllable-sprite">Controllable Sprite</a></li>
+<li><a class="reference internal" href="#moving-scenery-sprites">Moving Scenery Sprites</a></li>
+<li><a class="reference internal" href="#on-ground-enemy">On-Ground Enemy</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#programming-habits">Programming Habits</a></li>
+<li><a class="reference internal" href="#additional-extensions">Additional Extensions</a></li>
+<li><a class="reference internal" href="#grading-criteria">Grading Criteria</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_3/project_3_platform_game_easy.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="project-3-platform-game">
+<h1>Project 3: Platform Game<a class="headerlink" href="#project-3-platform-game" title="Permalink to this headline">¶</a></h1>
+<p>Adapted from Forest Ridge High School’s Mario Project.</p>
+<p><strong>Students will implement a side-scrolling platform game (For Example Super Mario Bros.) in Snap!.</strong></p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Platform games are among the most widely recognized types of video games.  Composing about one third of all console games at the peak of their popularity, platform games are characterized by their relative simplicity and by the common gameplay element of jumping across suspended platforms (hence the name) to avoid falling into a hazard.  Platform games also typically include enemy characters, items that grant the hero special abilities (“power-ups”), and a “checkpoint” system that allows the player to restart from partway through a game or level when he or she dies.</p>
+</div>
+<div class="section" id="details">
+<h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="controllable-sprite">
+<h3>Controllable Sprite<a class="headerlink" href="#controllable-sprite" title="Permalink to this headline">¶</a></h3>
+<p>Your program should have a “Mario” sprite. It does not necessarily need to look like Mario (a simple stick figure will suffice). Mario should respond to user input. Specifically:</p>
+<ul class="simple">
+<li><p>Mario should clearly “face” the right when you push the right arrow key</p></li>
+<li><p>Mario should clearly “face” the left when you push the left arrow key</p></li>
+<li><p>Mario should perform an animated “in-place” walk when you hold left or right arrow key</p></li>
+<li><p>Mario should jump based on some input (you can decide the key or mouse click)</p></li>
+</ul>
+</div>
+<div class="section" id="moving-scenery-sprites">
+<h3>Moving Scenery Sprites<a class="headerlink" href="#moving-scenery-sprites" title="Permalink to this headline">¶</a></h3>
+<p>You should have scenery sprites that move based upon Mario’s traveling on the level. It is up to you to decide the level scenery, but you should meet the following requirements:</p>
+<ul class="simple">
+<li><p>There should be at least two scenery sprites (Example: A mountain and a tree)</p></li>
+<li><p>You should layer these sprites relative to Mario and each other. For example, Mario should always be “in front” of any background scenery sprites</p></li>
+<li><p>Scenery sprites move relative to Mario as he moves. For example, when you hold down the right arrow key, the background sprites should move from right to left in the stage.</p></li>
+<li><p>Following with the layers, scenery sprites should move at different speeds so that one seems farther away. For example, a faraway mountain should move more slowly than a nearby tree.</p></li>
+<li><p>Scenery sprites should roll over/re-appear when they hit the edge of the stage. For example, when Mario is walking to the right, the scenery Sprites should re-appear on the right side of the stage when they roll off the left.</p></li>
+</ul>
+</div>
+<div class="section" id="on-ground-enemy">
+<h3>On-Ground Enemy<a class="headerlink" href="#on-ground-enemy" title="Permalink to this headline">¶</a></h3>
+<p>There should be an on-ground enemy for Mario to contend with. Specific criteria here include:</p>
+<ul class="simple">
+<li><p>There is at least one on-ground enemy</p></li>
+<li><p>The enemy sprite moves towards Mario, independent of whether Mario is moving (e.g. regardless of whether the user is pressing an arrow key).</p></li>
+<li><p>The enemy sprite reappears/rolls-over when he hits the edge of the stage</p></li>
+<li><p>The enemy sprite is animated when he is moving towards Mario</p></li>
+<li><p>If Mario does not jump he runs into the enemy and the game ends with an appropriate message &lt;HINT: you can use the “STOP ALL” block to end all scripts</p></li>
+<li><p>It should be possible for Mario to jump over the enemy.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="programming-habits">
+<h2>Programming Habits<a class="headerlink" href="#programming-habits" title="Permalink to this headline">¶</a></h2>
+<p>We will again look for you to incorporate good programming habits in your code:</p>
+<ul class="simple">
+<li><p>Using Start and Stop blocks.</p></li>
+<li><p>Making sure you initialize state appropriately so that your program is repeatable.</p></li>
+<li><p>Add comments to your code so it is easy to understand.</p></li>
+<li><p>Always keep in mind all Good Programming Skills you’ve been taught</p></li>
+</ul>
+</div>
+<div class="section" id="additional-extensions">
+<h2>Additional Extensions<a class="headerlink" href="#additional-extensions" title="Permalink to this headline">¶</a></h2>
+<p>Once you complete the above, you can extend your program. Some suggestions:</p>
+<ul class="simple">
+<li><p>Include flying enemies for Mario to dodge or duck</p></li>
+<li><p>Keep score based on how many objects Mario gets by [Hint: Use a variable and show it on the screen]</p></li>
+<li><p>Have Mario jump to ‘grab’ an object that offers Mario extra points or more powerful abilities (such as jumping higher or not being killed when he runs into an enemy). The objects must appear at random times and move smoothly as Mario runs</p></li>
+</ul>
+<p><strong>We will demo the most interesting projects in class, so be creative!</strong></p>
+</div>
+<div class="section" id="grading-criteria">
+<h2>Grading Criteria<a class="headerlink" href="#grading-criteria" title="Permalink to this headline">¶</a></h2>
+<p>The detailed list for what we will use to grade your projects is below. Please review your projects before submitting to be sure you meet all of them. If you have any questions on whether you meet a requirement, please ask us!!</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Requirement</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mario turns to the right on right arrow key</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mario turns to the left on left arrow key</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Mario performs an in-place animated walk if you hold down either arrow key</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mario jumps based on some input</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>There are least two scenery sprites</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Scenery sprites are layered with Mario (e.g. appropriate layering blocks are in your program)</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Scenery sprites move based on Mario’s movement</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Scenery sprites move at different speeds (e.g. far away versus near)</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Scenery sprites roll over when the fall of the stage</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>There is at least one on-ground enemy</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Enemy sprite always moves towards Mario</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enemy sprite re-appears/rolls over correctly</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>Enemy sprite is animated when it moves</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p>If Mario does not jump, he runs into the enemy and the game ends nicely and properly</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><p>Mario can jump over the enemy</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>Good programming #1:</em> Program has clear start and stop</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p><em>Good programming #2:</em> Program is repeatable and initializes state correctly</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>Good programming #3:</em> Use of comments in your code</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p><em>Good programming #4:</em> General skills you’ve been taught</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>Good programming #5:</em> Custom blocks used to break down program into logical parts</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Extra Credit:</strong> Include flying enemies for Mario to dodge or duck</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Extra Credit:</strong> Keep score based on how many objects Mario gets by</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Extra Credit:</strong> Have Mario jump to ‘grab’ an object that offers Mario extra points or more powerful abilities. The objects must appear at random times and move smoothly as Mario runs</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Extra Credit:</strong> Create Your Own Extension</p></td>
+<td><p>0-10</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>TOTAL POINTS</strong></p></td>
+<td><p><strong>105</strong> (135 Possible with all the extra credit)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

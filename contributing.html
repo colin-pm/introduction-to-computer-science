@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contributing &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="README.html">Home</a></li>
+                <li><a href="curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Contributing</a><ul>
+<li><a class="reference internal" href="#repository-location">Repository Location</a></li>
+<li><a class="reference internal" href="#markdown-style">Markdown style</a><ul>
+<li><a class="reference internal" href="#updating-gitbook-with-changes">Updating GitBook with changes</a></li>
+<li><a class="reference internal" href="#lint-tool">Lint tool</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#curriculum-style">Curriculum style</a><ul>
+<li><a class="reference internal" href="#how-to-write-snap">How to write <em>Snap!</em></a></li>
+<li><a class="reference internal" href="#snap-code"><em>Snap!</em> Code</a><ul>
+<li><a class="reference internal" href="#creating-new-script-images">Creating new script images</a></li>
+<li><a class="reference internal" href="#reusing-existing-script-images">Reusing existing script images</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#vocabulary-words">Vocabulary words</a></li>
+<li><a class="reference internal" href="#labs">Labs</a></li>
+<li><a class="reference internal" href="#lesson-plans">Lesson plans</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#creating-a-pull-request">Creating a pull request</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/contributing.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <!-- This document is very idealistic by design, feel free to suggest toning down any part -->
+<div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="repository-location">
+<h2>Repository Location<a class="headerlink" href="#repository-location" title="Permalink to this headline">¶</a></h2>
+<p>The curriculum’s source code is hosted on GitHub at: https://github.com/TEALSK12/introduction-to-computer-science</p>
+<p>You can open issues, fork the curriculum, or submit pull requests to suggest changes.</p>
+</div>
+<div class="section" id="markdown-style">
+<h2>Markdown style<a class="headerlink" href="#markdown-style" title="Permalink to this headline">¶</a></h2>
+<p>To keep the curriculum’s underlying markdown consistent, we use <a class="reference external" href="http://www.cirosantilli.com/markdown-style-guide">this markdown style guide</a>. Since markdown is not a strict specification, there are a few options we choose to take from the style guide</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.cirosantilli.com/markdown-style-guide/#option-space-sentence-1">space-sentence:1</a></p></li>
+<li><p><a class="reference external" href="http://www.cirosantilli.com/markdown-style-guide/#option-wrap-inner-sentence">wrap:inner-sentence</a></p></li>
+<li><p><a class="reference external" href="http://www.cirosantilli.com/markdown-style-guide/#option-header-atx">header:atx</a></p></li>
+<li><p><a class="reference external" href="http://www.cirosantilli.com/markdown-style-guide/#option-list-space-mixed">list-space:mixed</a></p></li>
+<li><p><a class="reference external" href="http://www.cirosantilli.com/markdown-style-guide/#option-code-fenced">code:fenced</a></p></li>
+</ul>
+<div class="section" id="updating-gitbook-with-changes">
+<h3>Updating GitBook with changes<a class="headerlink" href="#updating-gitbook-with-changes" title="Permalink to this headline">¶</a></h3>
+<p>If you make changes to file names and links, make sure to update the GitBook references in summary.md accordingly.</p>
+</div>
+<div class="section" id="lint-tool">
+<h3>Lint tool<a class="headerlink" href="#lint-tool" title="Permalink to this headline">¶</a></h3>
+<p>We use <a class="reference external" href="https://github.com/wooorm/mdast-lint">mdast-lint</a> to enforce the above style. All submissions will be run through <a class="reference external" href="https://github.com/wooorm/mdast-lint">mdast-lint</a> and free of any errors and warnings.</p>
+</div>
+</div>
+<div class="section" id="curriculum-style">
+<h2>Curriculum style<a class="headerlink" href="#curriculum-style" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-to-write-snap">
+<h3>How to write <em>Snap!</em><a class="headerlink" href="#how-to-write-snap" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>*Snap!*
+</pre></div>
+</div>
+</div>
+<div class="section" id="snap-code">
+<h3><em>Snap!</em> Code<a class="headerlink" href="#snap-code" title="Permalink to this headline">¶</a></h3>
+<p>Blocks and scripts should always be presented as they would be in <em>Snap!</em> as an image.</p>
+<p>Good</p>
+<blockquote>
+<div><p>Use the <img alt="move 10 steps" src="_images/move.png" /> block to move your sprite.</p>
+</div></blockquote>
+<p>Bad</p>
+<blockquote>
+<div><p>Use the move block to move your sprite.</p>
+</div></blockquote>
+<p>If it is absolutely necessary that a block not have a picture, wrap the name in blockquotes (e.g. <code class="docutils literal notranslate"><span class="pre">move</span> <span class="pre">10</span> <span class="pre">steps</span></code> block).</p>
+<div class="section" id="creating-new-script-images">
+<h4>Creating new script images<a class="headerlink" href="#creating-new-script-images" title="Permalink to this headline">¶</a></h4>
+<p>Use the “script pic…” feature to create new images. If you need the result of a reporter block, use shift-right-click to get the “script pic with result…” option.</p>
+<p>If you are adding a block, the file name should follow the text of the block with lower camel case.</p>
+<p>Good</p>
+<blockquote>
+<div><p><img alt="move 10 steps" src="_images/move.png" /> -&gt; <code class="docutils literal notranslate"><span class="pre">move10Steps.png</span></code></p>
+</div></blockquote>
+<p>Bad</p>
+<blockquote>
+<div><p><img alt="move 10 steps" src="_images/move.png" /> -&gt; <code class="docutils literal notranslate"><span class="pre">move.png</span></code></p>
+</div></blockquote>
+</div>
+<div class="section" id="reusing-existing-script-images">
+<h4>Reusing existing script images<a class="headerlink" href="#reusing-existing-script-images" title="Permalink to this headline">¶</a></h4>
+<p>Before you create new blocks images, check to see of blocks are stored in the curriculum in <code class="docutils literal notranslate"><span class="pre">/blocks</span></code>.</p>
+<p>All script images should be stored in <code class="docutils literal notranslate"><span class="pre">/scripts</span></code>.</p>
+</div>
+</div>
+<div class="section" id="vocabulary-words">
+<h3>Vocabulary words<a class="headerlink" href="#vocabulary-words" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="labs">
+<h3>Labs<a class="headerlink" href="#labs" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="lesson-plans">
+<h3>Lesson plans<a class="headerlink" href="#lesson-plans" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="creating-a-pull-request">
+<h2>Creating a pull request<a class="headerlink" href="#creating-a-pull-request" title="Permalink to this headline">¶</a></h2>
+<p>Each pull request should have it’s own branch. Here are a few examples of a proper pull request workflow</p>
+<ul class="simple">
+<li><p>http://codeinthehole.com/writing/pull-requests-and-other-good-practices-for-teams-using-github/</p></li>
+<li><p>https://github.com/skyscreamer/yoga/wiki/GitHub-Best-Practices</p></li>
+<li><p>https://www.thinkful.com/learn/github-pull-request-tutorial/</p></li>
+</ul>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

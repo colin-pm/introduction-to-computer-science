@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 1.1 - Welcome To SNAP! &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lab 1.1 - Welcome To <code class="docutils literal notranslate"><span class="pre">SNAP!</span></code></a><ul>
+<li><a class="reference internal" href="#part-1-blocks">Part 1 - Blocks</a></li>
+<li><a class="reference internal" href="#part-2-scripts">Part 2 - Scripts</a></li>
+<li><a class="reference internal" href="#part-3-reporters">Part 3 - Reporters</a></li>
+<li><a class="reference internal" href="#part-4-experiment-with-drawing-commands">Part 4 - Experiment with Drawing Commands</a></li>
+<li><a class="reference internal" href="#part-5-follow-that-mouse">Part 5 - Follow that Mouse</a><ul>
+<li><a class="reference internal" href="#did-it-follow-your-expectations-yes-no">Did it follow your expectations (Yes/No)?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#part-6-forever-and-a-day">Part 6 - Forever and a Day</a><ul>
+<li><a class="reference internal" href="#check-for-understanding">Check for Understanding</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#part-7-make-a-kaleidoscope">Part 7 - Make a Kaleidoscope</a></li>
+<li><a class="reference internal" href="#part-8-kaleidoscope-activity">Part 8 - Kaleidoscope Activity</a></li>
+<li><a class="reference internal" href="#grading-scheme-rubric">Grading Scheme/Rubric</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_1/lab_11.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lab-1-1-welcome-to-snap">
+<h1>Lab 1.1 - Welcome To <code class="docutils literal notranslate"><span class="pre">SNAP!</span></code><a class="headerlink" href="#lab-1-1-welcome-to-snap" title="Permalink to this headline">¶</a></h1>
+<p>Snap!is a programming language, which you can use to tell a computer what to do. A program is a particular set of instructions for the computer to follow.</p>
+<p>Programs in most languages use only letters (and punctuation), but Snap! is different: it’s a visual language. Instead of writing a program only using the keyboard, you will drag pictures of blocks and click them together.</p>
+<p>The following is a program in SNAP!:</p>
+<p><img alt="Simple Program in Snap!" src="../_images/simple_program.png" /></p>
+<p>Can you guess what it might do? (Write your guess below)</p>
+<div class="section" id="part-1-blocks">
+<h2>Part 1 - Blocks<a class="headerlink" href="#part-1-blocks" title="Permalink to this headline">¶</a></h2>
+<p>The area at the left edge of the window is the palette. As you see in the picture, it contains tabs for eight different-color block categories. In this lab, we will focus on the Motion, Sound, Pen, and Sensing tabs. You will learn about the other tabs in the next few labs.</p>
+<p>These tabs are an important organizational structure in Snap! because they are home to the various blocks that you will use to tell the computer what to do. The blocks are categorized under each tab based on what kind of thing each block does.</p>
+<ol>
+<li><p>Below, fill in the name of the category to which each block belongs.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Block</p></th>
+<th class="head"><p>Category</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="Play Note" src="../_images/play_note.png" /></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Clear" src="../_images/clear.png" /></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Mouse x" src="../_images/mouse_x.png" /></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Touching" src="../_images/touching.png" /></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Change y by" src="../_images/change_y.png" /></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Distance to" src="../_images/distance_to.png" /></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="Point in direction" src="../_images/point_in_direction.png" /></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="Stop All Sounds" src="../_images/stop_all_sounds.png" /></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Look at the <strong>Motion</strong> tab. Under this tab you will find a bunch of blocks that correspond to motion-like actions. For example, click on the <strong>Move block</strong>, drag it to the scripting area, and drop it anywhere in the scripting area.</p>
+<p><img alt="Move" src="../_images/move.png" /></p>
+<p><img alt="Move block dragged onto the stage" src="../_images/move_dragged.png" /></p>
+<p>The block that you just dragged and dropped into the scripting area controls something that we call a sprite, which is the arrowhead-looking thing in the middle of the stage (the white part of the window).</p>
+<p>Back to the scripting area, if you click on the <strong>Move Block</strong>  you just put there, the sprite will move 10 steps. You can see this visually depicted by the sprite moving in the stage. You can vary the input of the block, i.e., the number 10, to change the number of steps you want to the sprite to move.</p>
+<p><img alt="move 10 steps block" src="../_images/move.png" /></p>
+</li>
+<li><p>How can you change the block input so that the sprite moves in the opposite direction?</p></li>
+</ol>
+</div>
+<div class="section" id="part-2-scripts">
+<h2>Part 2 - Scripts<a class="headerlink" href="#part-2-scripts" title="Permalink to this headline">¶</a></h2>
+<p>Now that you have figured out how to make a sprite move, you might be wondering how to make the sprite do other things as well.
+To make a sprite do more than just move, we need to use different types of blocks and link them together. You can link blocks by Snapping (hence the name SNAP) them together – drag a block right underneath the one to which you want to attach it. Blocks will Snap! together when one block’s indentation is near the tab of the one above it. You should see a white bar appear like the one in the image below, which just shows you where the block will go after you drop it.</p>
+<p><img alt="Two blocks about to Snap! together" src="../_images/two_blocks_about_to_snap_together.png" /></p>
+<p>If you keep attaching blocks together in this way, you will create a script. A Snap! program consists of one or more of these scripts.</p>
+<ol>
+<li><p>Try recreating the following script in the scripting area in SNAP.</p>
+<p><img alt="Script with move and say blocks" src="../_images/script_with_move_and_say_blocks.png" /></p>
+<p>The purple say… blocks are available from the <strong>Looks</strong> tab.</p>
+<p>Remember, a script will tell the sprite what to do. Click on the script and see what happens! You will know that your script is running if it has a highlighted border around it:</p>
+<p><img alt="script with highlighted border" src="../_images/script_with_highlighted_border.png" /></p>
+</li>
+<li><p>What happens when you run this script?</p>
+<p><img alt="Script with move and say blocks" src="../_images/script_with_move_and_say_blocks.png" /></p>
+<p>Be sure to note: <strong>blocks in a script run in a specific order, from the top of the script to the bottom</strong>. Generally, Snap! waits until one block has finished its job before continuing on to the block below it. (One common exception is blocks that play sounds: a block’s job can be to start the sound, which means the block below it will execute while the sound is still playing.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="part-3-reporters">
+<h2>Part 3 - Reporters<a class="headerlink" href="#part-3-reporters" title="Permalink to this headline">¶</a></h2>
+<p>At the bottom of Motion palette are three blocks shaped differently from the others. The oval-shaped <strong>x-position</strong> and <strong>y-position</strong> are called <em>reporters</em>. (We don’t need the third one right now.) Unlike the jigsaw-puzzle-piece-shaped command blocks we’ve used until now, reporters don’t carry out an action (such as moving the sprite or displaying a speech balloon) by themselves. Instead they report a value, usually for use in another block’s input slot.</p>
+<p><img alt="x position" src="../_images/x_position.png" /> <img alt="y position" src="../_images/y_position.png" /></p>
+<p>These particular reporters tell you where the sprite is on the stage. As in algebra class, <strong>x</strong> means left-to-right position, and <strong>y</strong> means bottom-to-top position.</p>
+<p>Drag your sprite to the far right side of the stage. Next, drag an x position block into the scripting area and click on it. You should see a little speech balloon next to the block:</p>
+<p><img alt="x position reporting" src="../_images/x_position_reporting.png" /></p>
+<ol>
+<li><p>What value does the x position block report to you when the sprite is?</p>
+<p>…at the far right side of the stage:</p>
+<p>…in the center of the stage:</p>
+<p>…at the far left side of the stage:</p>
+<p>Click on the gray box to the left of the <strong>x-position block</strong> in the palette, and then look over to the stage. You will see that the value that the block would report is displayed on the stage:</p>
+<p><img alt="x position checkbox" src="../_images/x_position_checkbox.png" /></p>
+<p><img alt="x position watcher" src="../_images/x_position_watcher.png" /></p>
+<p>This on-stage display is called a <em>watcher</em>.</p>
+<p>The <strong>x-position block</strong> and the <strong>y-position block</strong> will tell you the position of your sprite on the screen. Move the sprite around and the values reported by these blocks change.</p>
+<p><img alt="x position" src="../_images/x_position.png" /> <img alt="y position" src="../_images/y_position.png" /></p>
+</li>
+</ol>
+</div>
+<div class="section" id="part-4-experiment-with-drawing-commands">
+<h2>Part 4 - Experiment with Drawing Commands<a class="headerlink" href="#part-4-experiment-with-drawing-commands" title="Permalink to this headline">¶</a></h2>
+<p>Try to get comfortable with the blocks under the Motion tab and the Pen tab. Figure out what each one does and try to use these blocks to draw a square or a simple picture.</p>
+<ol>
+<li><p>What do these blocks do? (write an explanation next to each block)?</p>
+<p><img alt="move 10 steps" src="../_images/move.png" /></p>
+<p><img alt="turn 15 degrees" src="../_images/turn_15_degrees.png" /></p>
+<p><img alt="clear" src="../_images/clear.png" /></p>
+<p><img alt="pen up" src="../_images/pen_up.png" /></p>
+<p><img alt="pen down" src="../_images/pen_down.png" /></p>
+</li>
+<li><p>Does the <em>turn</em> block change the sprite’s x and/or y position?</p></li>
+<li><p>Using these blocks, draw a square. Write the code (blocks) you used below.</p>
+<p><em>Tips and Tricks:</em></p>
+<p>Once the pen is down, it stays down even in a different script. Use the pen up block to lift the pen so that no lines will be drawn.</p>
+<p>You also will want to show the direction and x and y position of the sprite. In the Motion tab, you can select for these to be shown on the stage as described in the reporters activity you saw earlier in the lab.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="part-5-follow-that-mouse">
+<h2>Part 5 - Follow that Mouse<a class="headerlink" href="#part-5-follow-that-mouse" title="Permalink to this headline">¶</a></h2>
+<p><img alt="forever go to mouse x-y" src="../_images/forever_go_to_mouse.png" /></p>
+<ol>
+<li><p>What do you think the script above will do?</p>
+<p>Hint: <strong>mouse x</strong> and <strong>mouse y</strong> are reporters in the Sensing palette; they tell you where the mouse is pointing.</p>
+<p><img alt="mouse x" src="../_images/mouse_x.png" /> <img alt="mouse y" src="../_images/mouse_y.png" /></p>
+<p>Copy the code into SNAP, and click on the <code class="docutils literal notranslate"><span class="pre">forever</span></code> block to run it.</p>
+</li>
+</ol>
+<div class="section" id="did-it-follow-your-expectations-yes-no">
+<h3>Did it follow your expectations (Yes/No)?<a class="headerlink" href="#did-it-follow-your-expectations-yes-no" title="Permalink to this headline">¶</a></h3>
+<ol>
+<li><p>What happens when you drag the mouse to a different part of the screen while the program is running?</p></li>
+<li><p>How does program’s behavior change when you modify the <code class="docutils literal notranslate"><span class="pre">go</span> <span class="pre">to</span></code> block as shown below?</p>
+<p><img alt="go to mouse x + 30, y" src="../_images/go_to_mouse_x_30.png" /></p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="part-6-forever-and-a-day">
+<h2>Part 6 - Forever and a Day<a class="headerlink" href="#part-6-forever-and-a-day" title="Permalink to this headline">¶</a></h2>
+<p>From the previous exercise, you may have figured out what the <code class="docutils literal notranslate"><span class="pre">Forever</span></code> block does. The <code class="docutils literal notranslate"><span class="pre">forever</span></code> block is the first block you have seen that holds, or wraps around, other blocks. We call this a <em>C block</em> because of its shape. As the name <code class="docutils literal notranslate"><span class="pre">forever</span></code> implies, it will run the blocks inside it again and again and again and … well, forever. You will find this block under the <strong>Control</strong> tab.</p>
+<p><img alt="forever" src="../_images/forever.png" /></p>
+<p>Will a <code class="docutils literal notranslate"><span class="pre">forever</span></code> block ever stop?</p>
+<p><img alt="forever" src="../_images/forever.png" /></p>
+<p>Not unless you tell it to: Click on the stop sign icon on the upper right hand corner of the Snap! window.</p>
+<p><img alt="stop button" src="../_images/stop_button.png" /></p>
+<p>This stop sign will stop all scripts that are running in any sprite. This is equivalent to executing the <code class="docutils literal notranslate"><span class="pre">stop</span> <span class="pre">all</span></code> in the Control palette.</p>
+<p><img alt="stop all" src="../_images/stop_all.png" /></p>
+<div class="section" id="check-for-understanding">
+<h3>Check for Understanding<a class="headerlink" href="#check-for-understanding" title="Permalink to this headline">¶</a></h3>
+<ol>
+<li><p>How many times will the sprite say “Hello”?</p>
+<p><img alt="forever say" src="../_images/forever_say.png" /></p>
+<p>a) 1 <br>
+b) 2 <br>
+c) 10 <br>
+d) continuously</p>
+</li>
+<li><p>Assuming the sprite starts in the middle of the stage and pointing in direction 90, where would it end up after running this script?</p>
+<p><img alt="forever move" src="../_images/forever_move.png" /></p>
+<p>a) Farther right on the stage<br>
+b) Farther left on the stage<br>
+c) Off the stage to the right<br>
+d) Off the stage to the left</p>
+</li>
+<li><p>What would appear on the screen when this script is run?</p>
+<p><img alt="forever say animals" src="../_images/forever_say_animals.png" /></p>
+<p>a) The sprite would say “Tiger” forever<br>
+b) The sprite would say “Tiger” then “Panda” once<br>
+c) The sprite would alternate between saying “Tiger” and “Panda” forever.<br>
+d) The sprite would say “Tiger” and “Panda” at the same time forever.</p>
+</li>
+<li><p>Assuming the sprite started in the middle of the stage facing right, what kind of drawing would the sprite make?</p>
+<p><img alt="forever draw something" src="../_images/forever_draw_something.png" /></p>
+<p>a) a circle<br>
+b) a <br>
+c) a cylinder<br>
+d) a straight line</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="part-7-make-a-kaleidoscope">
+<h2>Part 7 - Make a Kaleidoscope<a class="headerlink" href="#part-7-make-a-kaleidoscope" title="Permalink to this headline">¶</a></h2>
+<p>Explore this drawing program for a little bit (<a class="reference external" href="https://aka.ms/kaleidodraw2">https://aka.ms/kaleidodraw2</a>). Press the spacebar to run the program, and move your mouse cursor over the stage of the Snap! window. While over the stage, use the <strong>d</strong> (pen down), <strong>u</strong> (pen up), and <strong>c</strong> (clear) keyboard keys to change what gets drawn on the screen. The script that causes the sprite to follow the pointer is</p>
+<p><img alt="forever go to mouse x-y" src="../_images/forever_go_to_mouse.png" /></p>
+<p>As you can see, this drawing program features more <strong>Control</strong> blocks, in addition to the <code class="docutils literal notranslate"><span class="pre">forever</span></code> block first introduced in the <em>Follow the Mouse activity</em>. These <em>hat</em>-shaped block, which can be used only at the beginning of a script, indicate when a specific script should be run.</p>
+</div>
+<div class="section" id="part-8-kaleidoscope-activity">
+<h2>Part 8 - Kaleidoscope Activity<a class="headerlink" href="#part-8-kaleidoscope-activity" title="Permalink to this headline">¶</a></h2>
+<p><img alt="kaleidoscope examples" src="../_images/kaleidoscope.gif" /></p>
+<p>The kaleidoscope consists of 4 sprites. Each sprite will be drawing with a different pen color. Each sprite’s movement is based on the movement of the mouse. The first sprite follows the mouse, just like in the example we looked at before. The other 3 sprites move around as the mouse moves, but reflected over the X and Y axes.</p>
+<p><strong>Don’t forget to save and submit your work!</strong></p>
+<p>Some tips:</p>
+<ul>
+<li><p>You will need four sprites. (We haven’t used more than one sprite up to now, but having more than one allows for more interesting projects, as you’ll see.) The easiest way to create three more is to <em>duplicate</em> the one you have. Right-click the sprite in the sprite corral, and select <strong>duplicate</strong> from the <em>context menu</em> that appears. Each duplicated sprite will have exactly the same scripts as the original, which is why we suggest duplication rather than just creating more sprites from scratch.</p></li>
+<li><p>You can change the color of each sprite by clicking the color input in that sprite’s <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">pen</span> <span class="pre">color</span></code> block (found under the <strong>Pen</strong> tab), choosing a color, and then clicking on the block itself (to run the block and actually set the color). Don’t worry about matching the colors in the animation exactly!</p>
+<p><img alt="set pen color" src="../_images/set_pen_color.png" /></p>
+</li>
+<li><p>Pay close attention to what each of the other sprites is doing in the animation above. You will need to modify the <strong>x</strong> and <strong>y</strong> inputs in each sprite’s <code class="docutils literal notranslate"><span class="pre">go</span> <span class="pre">to</span> <span class="pre">x-y</span></code> block using simple formulas, with <code class="docutils literal notranslate"><span class="pre">addition</span></code>and <code class="docutils literal notranslate"><span class="pre">subtraction</span></code>.</p>
+<p><img alt="go to x-y" src="../_images/go_to_x_y.png" /></p>
+<p><img alt="addition" src="../_images/addition.png" /></p>
+<p><img alt="subtraction" src="../_images/subtraction.png" /></p>
+<blockquote>
+<div><p>Hint: All the sprites are reflecting in different ways around the (x=0, y=0) origin point of the stage.**</p>
+</div></blockquote>
+</li>
+<li><p>Once you figured this out, try out some complicated formulas and/or more sprites, and share with your classmates</p></li>
+</ul>
+</div>
+<div class="section" id="grading-scheme-rubric">
+<h2>Grading Scheme/Rubric<a class="headerlink" href="#grading-scheme-rubric" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p><strong>Lab 1.1 Criteria</strong></p></th>
+<th class="head"><p>Points</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>1.1 What does it do?</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>1.2 Categories</p></td>
+<td><p>4 points</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>2.1 Move in opposite direction</p></td>
+<td><p>1 points</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>2.2 What happens</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>3.1 x positions</p></td>
+<td><p>3 points</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>5.1 What it does</p></td>
+<td><p>3 points</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>5.2 Does turn block change x or y position</p></td>
+<td><p>1 points</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>5.3 Draw a square</p></td>
+<td><p>4 points</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>6.1 What does it do</p></td>
+<td><p>2 points</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>6.2 Dragging the mouse</p></td>
+<td><p>1 points</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>6.3 Program behavior w/modification</p></td>
+<td><p>1 points</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><strong>Total</strong></p></td>
+<td><p><strong>28 points</strong></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><strong>Checking for Understanding</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>7 Multiple choice</p></td>
+<td><p>4 points</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><strong>Total</strong></p></td>
+<td><p><strong>4 points</strong></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><strong>Mini-project</strong></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>8 Make a Kaleidoscope</p></td>
+<td><p>10 points</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><strong>Total</strong></p></td>
+<td><p><strong>10 points</strong></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><strong>PROJECT TOTAL</strong></p></td>
+<td><p><strong>42 points</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

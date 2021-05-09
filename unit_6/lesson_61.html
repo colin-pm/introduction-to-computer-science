@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 6.1: Design Basics &#8212; Introduction to Computer Science 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/my-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/curriculum.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../README.html">
+          TEALS Program</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+                <li><a href="../README.html">Home</a></li>
+                <li><a href="../curriculum_map.html">Curriculum Map</a></li>
+                <li><a href="../changelog.html">Change Log</a></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../README.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Lesson 6.1: Design Basics</a><ul>
+<li><a class="reference internal" href="#learning-objectives">Learning Objectives</a><ul>
+<li><a class="reference internal" href="#emphasize-with-students">Emphasize with students</a><ul>
+<li><a class="reference internal" href="#curricular-competencies-understanding-context-defining-ideating">Curricular Competencies - understanding context, defining, ideating</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#materials-preparation">Materials/Preparation</a></li>
+<li><a class="reference internal" href="#pacing-guide">Pacing Guide</a></li>
+<li><a class="reference internal" href="#instructor-s-notes">Instructor’s Notes</a><ul>
+<li><a class="reference internal" href="#introduce-project">Introduce project</a></li>
+<li><a class="reference internal" href="#sample-design-activity">Sample design activity</a></li>
+<li><a class="reference internal" href="#debrief">Debrief</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#accommodation-differentiation">Accommodation/Differentiation</a></li>
+<li><a class="reference internal" href="#forum-discussion">Forum discussion</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/unit_6/lesson_61.md.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="body col-md-12 content" role="main">
+      
+  <div class="section" id="lesson-6-1-design-basics">
+<h1>Lesson 6.1: Design Basics<a class="headerlink" href="#lesson-6-1-design-basics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>Students will be able to…</p>
+<ul class="simple">
+<li><p>Identify the key considerations when designing a piece of software.</p></li>
+<li><p>Describe methods for prioritizing features, use cases, and/or scenarios.</p></li>
+<li><p>Explain why design and planning are necessary steps in the software engineering process.</p></li>
+</ul>
+<div class="section" id="emphasize-with-students">
+<h3>Emphasize with students<a class="headerlink" href="#emphasize-with-students" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="curricular-competencies-understanding-context-defining-ideating">
+<h4>Curricular Competencies - understanding context, defining, ideating<a class="headerlink" href="#curricular-competencies-understanding-context-defining-ideating" title="Permalink to this headline">¶</a></h4>
+<p>In this course, we are not actually typing out any code.  In our case, “coding” would refer to the stage where we actually drag-and-drop in the Snap! design environment.   Later when we learn other languages, “coding” would refer to when we start typing out code in a specific language like Java or Python.</p>
+<p>When we first learn computer programming, it may seem fun to dive right into coding.  Resist the urge to do so!
+Software development is a process.  It begins with carefully thinking about, and planning out, your design.  This includes envisioning what the final product might look like, and planning out the steps needed to implement it.    Remember,  “design then code”.</p>
+</div>
+</div>
+</div>
+<div class="section" id="materials-preparation">
+<h2>Materials/Preparation<a class="headerlink" href="#materials-preparation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="unit_6_tips.html"><span class="doc std std-doc">Unit 6 Tips</span></a></p></li>
+<li><p><a class="reference internal" href="project_6.html"><span class="doc std std-doc">Final Project Specifications</span></a> (<a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Projects/Projects%20Word/Project%206%20Final%20Project.docx?raw=true">docx</a>)(<a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Projects/Projects%20PDF/Project%206%20Final%20Project.pdf?raw=true">pdf</a>)</p></li>
+<li><p><a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Unit%206%20Word/Final%20Project%20Plan%20Organizer.docx?raw=true">Final Project Plan Organizer</a></p></li>
+<li><p><a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Unit%206%20Word/Final%20Project%20Development%20Plan.docx?raw=true">Final Project Development Plan</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/aV6LFVXxd34">Examples of TEALS Final Projects</a></p></li>
+</ul>
+</div>
+<div class="section" id="pacing-guide">
+<h2>Pacing Guide<a class="headerlink" href="#pacing-guide" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Duration</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>5 minutes</p></td>
+<td><p>Welcome, attendance, bell work, announcements</p></td>
+</tr>
+<tr class="row-odd"><td><p>15 minutes</p></td>
+<td><p>Introduce final project, demo examples</p></td>
+</tr>
+<tr class="row-even"><td><p>25 minutes</p></td>
+<td><p>Sample Design activity</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 minutes</p></td>
+<td><p>Debrief and wrap-up</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="instructor-s-notes">
+<h2>Instructor’s Notes<a class="headerlink" href="#instructor-s-notes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="introduce-project">
+<h3>Introduce project<a class="headerlink" href="#introduce-project" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Talk about how far students have come this semester.</p>
+<ul class="simple">
+<li><p>Ask students to think back to the start of the semester and remember how little they knew about programming.</p></li>
+<li><p>Briefly list a bunch of the things they’ve learned (drawing, animation, variables, loops, conditionals, loops, etc.)</p></li>
+<li><p>Maybe show a lab or assignment from early on and remind them that, not that long ago, this was challenging, whereas it now seems nearly trivial (hopefully).</p></li>
+</ul>
+</li>
+<li><p>Explain that, for their final project, the students will get to design and build a program of their own choosing.</p>
+<ul class="simple">
+<li><p>Point out that this will involve more than just writing code-* there will be planning, design, scheduling, and other project management tasks.</p></li>
+<li><p>Emphasize that students will be graded on not only the program they produce, but the process they used to design, plan, and implement it.</p></li>
+</ul>
+</li>
+<li><p>Demonstrate a few example projects (with as much variety as possible).</p>
+<ul class="simple">
+<li><p>Try to hit a bunch of different types of programs.  Many students will gravitate towards games, but other options include simulations, productivity tools, musical projects, animations, and more.</p></li>
+</ul>
+</li>
+<li><p>Distribute the project rubric and point out key aspects of the requirements.</p>
+<ul class="simple">
+<li><p>Point out the steps in the process and that each one is equally important.</p></li>
+<li><p>Specifically mention the large number of points for things <em>not</em> related to coding.</p></li>
+<li><p>Remind students that, as they are now Snap! experts, there are high expectations for the depth, complexity, and completeness of their projects.</p></li>
+</ul>
+</li>
+</ol>
+<p>What are the different categories of software applications?  When looking at an application, what type of functionality does it have?  Who are the end users, or target audience?  What do you like, or not like, about it?  What do other users/reviewers say about it?  How does it compare to, or stand apart from, other similar apps? As we study and analyze sample applications, we gain experience that will help us design our own.</p>
+</div>
+<div class="section" id="sample-design-activity">
+<h3>Sample design activity<a class="headerlink" href="#sample-design-activity" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Tell students that, as a class, they will now practice some of the design and planning tasks for the project on a well-known app.</p>
+<ul class="simple">
+<li><p>Pick an app that both you and most of your students have a deep familiarity with, but that is not too complex.  Twitter, Instagram, Pinterest, or other relatively small-scope social media work well here.</p></li>
+<li><p>If necessary, scope down the app by focusing on only the core features (e.g. only consider public, text-only Tweets to start).</p></li>
+</ul>
+</li>
+<li><p>Walk through each of the design steps in the project rubric for the chosen app:</p>
+<ul class="simple">
+<li><p><strong>Pitch</strong> - describe the basic functionality of the app in one paragraph of less.</p></li>
+<li><p><strong>Define</strong> - List the features/scenarios the app will support.</p></li>
+<li><p><strong>Sketch</strong> - Draw a very basic wire frame sketch of the main “screens” of the app.</p></li>
+<li><p>In this step, try to keep students from fixating on making their app look <em>exactly</em> like the existing app.</p></li>
+</ul>
+</li>
+<li><p>Expand - Build a spec using the <a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Unit%206%20Word/Final%20Project%20Plan%20Organizer.docx?raw=true">Final Project Plan Organizer</a>.</p>
+<ul class="simple">
+<li><p>In this step, emphasize completeness and detail.  Leaving out steps or requirements will make it difficult to plan effectively and will likely force major changes or cuts later.</p></li>
+</ul>
+</li>
+<li><p>Plan - Based on the feature list and spec, create a full development plan using the <a class="reference external" href="https://github.com/TEALSK12/introduction-to-computer-science/blob/master/Unit%206%20Word/Final%20Project%20Development%20Plan.docx?raw=true">Final Project Development Plan</a>.</p>
+<ul class="simple">
+<li><p>As tasks and costs are listed, remind students to keep an eye on the total amount of time required and to include buffer for things going wrong.  Be sure to prioritize tasks so that cuts can be made if necessary.</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="debrief">
+<h3>Debrief<a class="headerlink" href="#debrief" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Once all documents have been created, ask students what the next steps should be.</p></li>
+<li><p>Get more detail than “start coding.”  Students should be focused on the highest-priority tasks and should understand the plan for evaluating progress throughout the project.</p></li>
+<li><p>Preserve the documents created in the activity to give to students as examples when planning their own projects.</p></li>
+<li><p>Emphasize that both the spec and the plan are “living documents” and should be updated as the project progresses (when new features are thought of, tasks are cut for time or complexity, priorities are reorganized, etc.)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="accommodation-differentiation">
+<h2>Accommodation/Differentiation<a class="headerlink" href="#accommodation-differentiation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>This lesson could easily take two or even three days depending on the class.  Take as long as is necessary to ensure students have a complete understanding of the steps necessary to create their final project, but try not to get too bogged down in the details of the sample app.</p></li>
+<li><p>For classes with a large number of self-sufficient students, consider having students complete this activity in small groups rather than as a full class.  Along the way, have groups share their progress and provide feedback to each other.</p></li>
+</ul>
+</div>
+<div class="section" id="forum-discussion">
+<h2>Forum discussion<a class="headerlink" href="#forum-discussion" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forums.tealsk12.org/c/intro-unit-6/lesson-6-1-design-basics">Lesson 6.1 - Design Basics</a> (TEALS Discourse account required).</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2021, TEALS.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.5.4.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
