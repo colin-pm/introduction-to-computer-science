@@ -3,7 +3,7 @@
 ## [2.2.1] - 2020-11-25
 
 |Unit     | Change |
-|---------|--------|
+| ------- | ------ |
 |Lesson 1.4 | Updated guidance with images to the Broadcast and Wait instructions |
 |Lab 1.4 | Update Rubric, instructions and answer key to set expectations to using `Broadcast` in the solution. |
 |Unit 6| Removed references to Agile |
@@ -14,7 +14,7 @@
 ## [2.2.0] - 2020-11-13
 
 |Unit     | Change |
-|---------|--------|
+| ------- | ------ |
 |Lessons 4.1 - 4.5| Wording consistency, spelling updates |
 |Labs 4.2 - 4.5 | Formatting, wording consistency, Creative Common and TEALS Branding |
 |Additional Curriculum Materials | Lab Answer Keys created for Labs: 4.2, 4.3 |
@@ -22,7 +22,7 @@
 ## [2.1.9] - 2020-10-23
 
 |Unit     | Change |
-|---------|--------|
+| ------- | ------ |
 |Lessons 2.1 - 3.4| Wording consistency, spelling updates |
 |Labs 2.1 - 3.4 | Formatting, wording consistency, Creative Common and TEALS Branding |
 |Lab 3.4 | Distance Formula changed to Bonus problem. |
@@ -32,7 +32,7 @@
 ## [2.1.8] - 2020-10-16
 
 |Unit     | Change |
-|---------|--------|
+| ------- | ------ |
 |Curriculum Map | Objectives aligned to lesson plans|
 |Lesson 1.4| Updated lab instructions to be more clear, added instruction on how to add a second sprite. |
 |Unit 3| Updated title to Abstraction and customization |
@@ -43,7 +43,7 @@
 ## [2.1.7] - 2020-10-7
 
 |Unit     | Change |
-|---------|--------|
+| ------- | ------ |
 |Curriculum Map | Added Guidance on where to find answer keys|
 |All Units| Snap! Spelling Consistent across HTML files|
 |Unit 1 | Labs 1.1, 1.2, 3.2 Answer Keys added to additional curriculum Materials |
@@ -53,7 +53,7 @@
 ## [2.1.6] - 2020-9-16
 
 |Unit     | Change |
-|---------|--------|
+| ------- | ------ |
 |Curriculum Map | Reformatted page with a days column for consolidation and consistency, moved PPTs to lesson pages|
 |CSS | Updated CSS so that tables will align left and slightly more appealing to look at|
 |Units 1-3| Added Video Resources and Video Quizzes |
@@ -69,7 +69,7 @@
 ## [2.1.5] - 2020-08-28
 
 |Unit     | Change |
-|---------|--------|
+| --------|------- |
 |Unit 0 | Added Resources for Creating an account, saving and sharing in Snap!|
 |Unit 0 | Added Video Resource for saving and sharing in Snap! |
 |Unit 1| Adding Scaffolding Accommodations for finding the Exterior angle of a shape|
@@ -80,7 +80,7 @@
 ## [2.1.4] - 2020-08-27
 
 |Unit     | Change |
-|---------|--------|
+| ------- | ------ |
 |Unit 4| Added Slide decks|
 |Unit 2| Added context to 2.4 Do Now|
 |Unit 4| Aligned the name of Project|
@@ -89,7 +89,7 @@
 ## [2.1.3] - 2020-05-20
 
 |Unit     | Change |
-|---------|--------|
+| ------- | ------ |
 |Unit 0| Added Slide decks|
 |Unit 1| Added Slide decks|
 |Unit 2| Added Slide decks|
@@ -101,7 +101,7 @@
 
 ## [2.1.2] - 2018-11-28
 |Unit     | Change |
-|---------|--------|
+| ------- | ------ |
 |Culture_day_lesson_b.md| Added Curriculum Competencies and Possible Topics|
 |Culture_day_lesson_c.md| Added "My Skills and Interests Journal" culture day|
 |Culture_day_lesson_d.md| Added "Interview with People in Technology" culture day|
@@ -120,7 +120,7 @@
 
 ## [2.1.1] - 2018-08-21
 | Unit    | Change |
-|---------|--------|
+| ------- | ------ |
 | lab_22.md | Change theme from brick wall to yellow brick road
 | lesson_22.md |
 | SUMMARY.md |
@@ -128,7 +128,7 @@
 
 ## [2.1.0] - 2018-08-16
 | Unit    | Change                                                                                                                                                                                                                    |
-|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 0.2     | Toothbrush activity option added to Do Now  <br>World Cafe protocol added for Lab                                                                                                                                             |
 | 0.4     | Student Experiences Survey added and updated lab files uploaded                                                                                                                                                           |
 | 1.1     | Diverse Grouping guidance added for lab <br>Helping Trios handout added as Accommodation/Differentiation                                                                                                                      |

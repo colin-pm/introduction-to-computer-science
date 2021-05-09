@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "introduction-to-computer-science"
+version = "0.1.0"
+description = "TEALS Intro CS Curriculum"
+authors = ["TEALS"]
+license = "CC BY-NC-SA 4.0"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+Sphinx = "^3.5.4"
+sphinx-markdown-tables = "^0.0.15"
+sphinx-bootstrap-theme = "^0.7.1"
+myst-parser = "^0.14.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -171,6 +171,10 @@ Student work consists of class participation, daily labs, end of unit projects, 
 
 This curriculum is considered a living document and is intended to be updated regularly both by the TEALS team and with contributions from the TEALS community.  In particular, feedback on teaching teams' experiences in conducting the lessons in this curriculum is always welcome.  Teaching teams are also encouraged to share ideas for additional activities, lessons, or projects that can be incorporated into the curriculum guide.  Please see the [Contributing](contributing.md) page for more information about how to contribute to the curriculum.
 
+## How to build the course documentation
+
+The 
+
 ## Printing
 
 The Introduction to Computer Science can be printed by navigating to https://aka.ms/TEALSIntroPDF.
