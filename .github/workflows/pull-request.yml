@@ -1,0 +1,30 @@
+name: Build docs
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # Sets up Python
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # Installs deps
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install poetry
+          poetry install
+
+      # TODO: Investigate adding steps here to lint and validate style/standards
+
+      # Builds documentation
+      - name: Build documentation
+        run: |
+          poetry run make html
