@@ -29,7 +29,7 @@ We use [mdast-lint](https://github.com/wooorm/mdast-lint) to enforce the above s
 
 ### How to write *Snap!*
 
-```snap
+```
 *Snap!*
 ```
 
