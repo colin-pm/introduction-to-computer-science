@@ -186,13 +186,15 @@ Once you have Python and Poetry installed, the following commands can be run in 
 ```shell
 # Install the project dependencies.  This command only needs to be ran once.
 poetry install
+
 # Open the Poetry shell
 poetry shell
 # Make the HTML documentation
 make html
 
-# Alternatively, instead of entering the Poetry shell, you can simply run
+# Alternatively, instead of using the Poetry shell, you can simply run the following
 poetry run make html
+# However, this sometimes doesn't work on Windows machines
 ```
 
 ## Printing
