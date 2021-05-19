@@ -9,6 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      # Lint the project
+      - name: markdownlint-cli
+        uses: nosborn/github-action-markdown-cli@v1.1.1
+        with:
+          files: .
+
       # Sets up Python
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
@@ -21,8 +27,6 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install poetry
           poetry install
-
-      # TODO: Investigate adding steps here to lint and validate style/standards
 
       # Builds documentation
       - name: Build documentation
